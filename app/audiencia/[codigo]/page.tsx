@@ -20,7 +20,25 @@ import { useLiveSession } from '@/hooks/useLiveSession'
 
 export default function AudienciaPage() {
   const params = useParams()
-  const codigo = params.codigo as string
+  const codigo = params?.codigo as string
+  
+  // Si no hay código, mostrar error
+  if (!codigo) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center p-4">
+        <Card className="w-full max-w-md">
+          <CardContent className="p-6 text-center">
+            <h2 className="text-xl font-semibold text-red-600 mb-2">
+              Error: Código de sesión no válido
+            </h2>
+            <p className="text-muted-foreground">
+              No se pudo encontrar el código de sesión en la URL.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    )
+  }
   
   const [nombreUsuario, setNombreUsuario] = useState('')
   const [nuevaPregunta, setNuevaPregunta] = useState('')
