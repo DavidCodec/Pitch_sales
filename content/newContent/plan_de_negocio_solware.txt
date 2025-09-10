@@ -1,0 +1,1503 @@
+
+                                                      11DCOTN32N2525476
+
+
+
+
+                        Plan de Negocio
+
+
+
+
+     AGENCIA SOLWARE
+
+
+
+
+              Eugenio Andreone y Jesús Freites
+
+               Caracas, 8 de septiembre de 2025
+
+
+
+
+Este Plan de Negocio es confidencial. No se podrá reproducir ni transmitir a
+terceros ni el plan propiamente dicho ni la información contenida en él sin la
+                     autorización escrita de Solware.Agency o de los autores.
+                                                                       11DCOTN32N2525476
+
+
+
+
+                                           Índice
+
+1. Resumen Ejecutivo:​                                                                 4
+2. Servicio​                                                                           4
+    2.1. SolHub: Qué hace, cómo funciona y qué lo diferencia​                          4
+    2.2. Situación actual: laboratorios en Venezuela y sus desafíos​                   6
+3. Equipo de trabajo​                                                                  7
+    3.1 Núcleo Fundador y Dirección​                                                   8
+    3.2 Colaboradores Clave​                                                           8
+    3.3 Aliado Estratégico: Laboratorio Conspat​                                       9
+    3.4 Organigrama del Equipo actual​                                                 9
+    3.5 Vacantes y Fortalecimiento del Equipo​                                        10
+    3.6 Metodología de Trabajo​                                                       11
+4. Marketing​                                                                         11
+    4.1 Mercado Objetivo​                                                             11
+    4.2 Análisis de la Competencia​                                                   12
+    4.3 Estrategia de Comercialización​                                               13
+    4.4 Política de Precios​                                                          14
+    4.5 Gasto de Publicidad​                                                          15
+    4.6 KPIs de Marketing y Ventas​                                                   15
+    4.7 Análisis FODA​                                                                15
+5. Sistema de negocio y organización​                                                 16
+    5.1 Concepto Central​                                                             16
+    5.2 Nuestro Enfoque​                                                              16
+    5.3 Flujo del Sistema de Negocio​                                                 17
+    5.4 Organización Interna​                                                         18
+    5.5 Cultura Corporativa (Valores y Normas)​                                       18
+    5.6 Make vs. Buy (desarrollar vs. tercerizar)​                                    18
+    5.7 Ventajas Mutuas con los Socios​                                               19
+    5.8 Business Model Canva​                                                         20
+6. Calendario de realización​                                                         21
+    6.1 Estrategia de Crecimiento​                                                    21
+    6.2 Plan de desarrollo​                                                           22
+7. Riesgos​                                                                           23
+    7.1 Identificación y gestión de riesgos​                                          23
+8. Financiamiento​                                                                    26
+    Proyección Finanzas -Solware Solhub​                                              26
+
+
+                                                                                       2
+                                                         11DCOTN32N2525476
+
+
+
+
+    8.1 Gastos Únicos​                                                  26
+    8.1.1 Gastos únicos por puesto de trabajo​                          26
+    8.1.2 Gastos únicos de infraestructura compartida​                  27
+    8.1.3 Variación según escenarios​                                   28
+    8.2 Ingresos proyectados​                                           30
+    8.3 Flujo de caja y viabilidad financiera​                          31
+9. Demo en vivo: SolHub en acción​                                      32
+10. Referencias​                                                        33
+
+
+
+
+                                                                         3
+                                                               11DCOTN32N2525476
+
+
+
+
+1. Resumen Ejecutivo:
+
+       Solware es una empresa tecnológica fundada en Caracas que desarrolla
+soluciones digitales para optimizar procesos empresariales. Nuestro producto
+principal, SolHub, es un sistema administrativo web diseñado específicamente para
+laboratorios y clínicas, que centraliza la gestión de pacientes, casos, pagos, reportes
+y analítica en una sola plataforma.
+
+       El sector salud en Venezuela enfrenta grandes limitaciones: más de 1.700
+laboratorios y clínicas aún dependen de sistemas obsoletos, Excel o registros
+manuales, lo que genera demoras en la entrega de informes, duplicación de tareas y
+ausencia de indicadores confiables en tiempo real. Para responder a esta necesidad
+creamos SolHub, un sistema administrativo web diseñado para laboratorios y clínicas
+que centraliza la gestión de pacientes, casos, pagos, reportes y analítica, eliminando
+retrabajos y optimizando la operación. Como diferencial, SolHub ofrece hiper
+personalización, integración con la normativa local (SENIAT, moneda dual) y un
+módulo opcional de IA (SolIA) que asiste en la redacción y estandarización de
+reportes clínicos bajo supervisión médica.
+
+      Actualmente contamos con un MVP (Producto Mínimo Viable) validado en
+Laboratorios Conspat, lo que demuestra la efectividad de la solución en un entorno
+real y funciona como caso de éxito inicial para su expansión en el mercado
+venezolano y latinoamericano.
+
+2. Servicio
+
+2.1. SolHub: Qué hace, cómo funciona y qué lo diferencia
+
+       La plataforma digitaliza y optimiza todo el ciclo de trabajo: desde la recepción
+y registro de pacientes hasta la generación de reportes, pagos y análisis de
+indicadores. A diferencia de los sistemas genéricos y desactualizados, SolHub
+ofrece:
+
+   ●​ Automatización de procesos críticos: registro de pacientes, generación de
+      reportes, cálculos automáticos y conversión de divisas. Tareas que antes
+      tomaban en promedio 2 minutos ahora se hacen en 30 segundos (−75 %). En
+      el flujo completo de atención, el tiempo se reduce de 12–15 minutos a 6-9,
+      liberando hasta 195 horas al mes. Imaginemos el impacto cuando SolHub se
+      involucra en todos los procesos del laboratorio.
+   ●​ Indicadores en tiempo real: métricas de ingresos, productividad, casos
+      pendientes y estudios más solicitados.
+
+
+
+                                                                                     4
+                                                             11DCOTN32N2525476
+
+
+
+
+   ●​ Plantillas estandarizadas como propiedad intelectual propia, que agilizan la
+      redacción de informes, garantizan consistencia entre laboratorios y aseguran
+      cumplimiento con los estándares regulatorios locales. Esta característica lo
+      diferencia claramente de softwares genéricos y crea una barrera competitiva
+      difícil de replicar.
+   ●​ Migración de datos sencilla: SolHub incorpora un proceso de importación
+      desde sistemas existentes. La mayoría de las plataformas actuales permiten
+      descargar su base de datos en formatos estándar como CSV o SQL, lo que
+      facilita la transición sin pérdida de información. De esta forma, los clientes
+      pueden trasladar historiales de pacientes, casos y reportes de manera segura
+      y rápida hacia la nueva plataforma.
+   ●​ Hiper Personalización: se adapta a los procesos del cliente y no al revés.
+   ●​ Seguridad avanzada: gestión multiusuario con control de permisos y limitación
+      de accesos según número de usuarios para evitar vulnerabilidades.
+   ●​ Módulo de IA privado para cada laboratorio (SolIA): entrenado con datos
+      validados por laboratorios aliados como Conspat, que apoya en la redacción
+      estandarizada de informes, clasificación de casos y extracción de hallazgos
+      clave bajo supervisión médica.
+
+Innovaciones clave
+
+   ●​ Mayor precisión en la interpretación de los exámenes: la automatización y los
+      algoritmos de apoyo reducen errores humanos y aumentan la consistencia de
+      resultados, facilitando el trabajo de los médicos.
+   ●​ Módulo de tasa e impuestos: permite configurar de forma dinámica tasas
+      cambiarias ($, EUR, VES) y cálculo de impuestos, alineado con el SENIAT,
+      para asegurar exactitud financiera y contable.
+   ●​ Interfaz con software de facturación de terceros: SolHub puede operar de
+      forma nativa con facturación homologada por SENIAT o, en casos donde el
+      cliente ya utiliza un sistema como Galac o Profit, integrarse mediante APIs y
+      exportación en formatos estándar (CSV/JSON). Esto asegura continuidad
+      operativa y evita que el cliente deba abandonar herramientas existentes,
+      ofreciendo flexibilidad en la transición.
+   ●​ Arquitectura híbrida (local + cloud): SolHub funciona de manera local en los
+      servidores del cliente para asegurar control y velocidad de respuesta, pero
+      mantiene un respaldo 24/7 en la nube con sincronización automática y
+      mecanismos de failover. Esto garantiza continuidad operativa incluso ante
+      fallos de infraestructura local, ofreciendo alta disponibilidad y reduciendo
+      riesgos de interrupción en procesos críticos.
+   ●​ IA segura y local. Frente al uso indiscriminado de GPT en salud, que puede
+      exponer información sensible de pacientes a terceros, SolHub implementa una
+      IA orquestada sin retención de datos. Se apoya en APIs de terceros con
+
+
+
+                                                                                  5
+                                                              11DCOTN32N2525476
+
+
+
+
+      anonimización y acuerdos de no retención de datos, por lo que la información
+      identificable no se comparte fuera de la infraestructura del cliente.
+   ●​ Plantillas clínicas estandarizadas para reportes de patología y
+      laboratorio, desarrolladas junto a médicos especialistas, que agilizan el
+      trabajo y se convierten en propiedad intelectual exclusiva de Solware.
+   ●​ Dataset clínico validado a partir de casos reales (anonimizados) en
+      alianza con Conspat, que permite entrenar y mejorar continuamente el
+      módulo de IA, creando una base de conocimiento única y difícil de
+      replicar.
+   ●​ Documentación de procesos de personalización que sistematiza la forma
+      en que adaptamos SolHub a cada cliente, transformando la
+      “hiperpersonalización” en un know-how repetible y defendible.
+
+2.2. Situación actual: laboratorios en Venezuela y sus desafíos
+
+       El sector de laboratorios clínicos y patológicos en Venezuela enfrenta una
+realidad compleja. En las principales ciudades —Caracas, Maracaibo, Valencia,
+Barquisimeto y Maracay— operan más de 1.200 clínicas y más de 500 laboratorios
+privados. Sin embargo, la mayoría todavía gestiona sus procesos con sistemas
+genéricos desactualizados, hojas de cálculo o registros manuales, lo que genera:
+
+   ●​ Demoras en la entrega de informes clínicos, que pueden retrasar diagnósticos
+      críticos.
+   ●​ Duplicación de registros y tareas administrativas repetitivas que consumen
+      tiempo del personal.
+   ●​ Ausencia de integración entre áreas (recepción, patología, caja, gerencia), lo
+      que dificulta consolidar la información.
+   ●​ Limitada capacidad de análisis y control: los dueños y gerentes carecen de
+      indicadores confiables en tiempo real sobre ingresos, productividad o estudios
+      más demandados.
+   ●​ Poca adaptabilidad a la realidad local, como la necesidad de trabajar con
+      moneda dual ($/VES), cumplir con la facturación del SENIAT o enfrentar la
+      inestabilidad de la conectividad.​
+
+
+      Mientras en Latinoamérica crece con fuerza la digitalización en salud, un
+mercado que generó cerca de USD 17 036,5 millones en ingresos en 2024 y que
+proyecta un crecimiento anual compuesto de 23,2 % entre 2025 y 2030
+grandviewresearch.com, Venezuela se encuentra rezagada. Esto abre una
+oportunidad única para soluciones que combinen accesibilidad, personalización y
+soporte local.
+
+
+
+
+                                                                                  6
+                                                               11DCOTN32N2525476
+
+
+
+
+       Además de la validación inicial con Laboratorios Conspat, hemos realizado un
+trabajo de campo activo, visitando más de 30 laboratorios y clínicas en Caracas y
+Acarigua, incluyendo también clínicas veterinarias. En estas visitas sostuvimos
+conversaciones con gerentes, administradores y personal operativo, lo que nos
+permitió recopilar retroalimentación directa sobre sus procesos, necesidades y
+resistencias.
+
+        Este levantamiento nos ha dado una visión clara de los puntos de dolor más
+frecuentes y, al mismo tiempo, nos ha permitido ir ajustando SolHub de manera
+iterativa. Incluso recibimos comentarios de forma anónima, lo que demuestra que
+existe interés, pero también cautela en compartir información sensible. Esta
+validación en terreno refuerza que el problema que atacamos es real y que existe
+disposición a considerar una solución adaptada como la nuestra.
+
+       Contamos con un MVP validado en Laboratorios Conspat, actualmente en uso
+dentro de un entorno clínico real. Este caso representa una referencia sólida y
+evidencia directa de que la solución es técnicamente viable y confiable para el sector.
+La experiencia con Conspat marca un hito inicial para escalar el modelo hacia otros
+laboratorios y clínicas de Venezuela y Latinoamérica.
+
+       Es importante subrayar que no todos los centros identificados constituyen
+clientes potenciales inmediatos. Una parte significativa de laboratorios pequeños
+opera con márgenes reducidos y difícilmente puede destinar recursos a innovación.
+Por ello, el mercado objetivo inicial se concentra en laboratorios y clínicas medianas
+y grandes, con facturación en divisas y procesos administrativos más complejos,
+donde la digitalización es crítica y existe verdadera capacidad de pago.
+
+      Estado actual: SolHub se encuentra implementado en Conspat y en fase de
+crecimiento funcional, con el desarrollo de nuevos módulos en planificación.
+
+   ●​ Gestión de nómina, inventario y logística.
+   ●​ Facturación homologada por el SENIAT.
+   ●​ Optimización de seguridad por usuarios.
+   ●​ Expansión del módulo de IA con funciones avanzadas para el análisis médico.
+
+3. Equipo de trabajo
+       La dirección de Solware combina los puntos fuertes de sus socios fundadores
+y aliados estratégicos, integrando un equipo multidisciplinario con experiencia en
+automatización, tecnología, marketing, finanzas y gestión operativa. El equipo opera
+con una estructura ligera y flexible, activa en las áreas de Producto, Tecnología,
+
+
+
+
+                                                                                     7
+                                                             11DCOTN32N2525476
+
+
+
+
+Implementación y Ventas/Éxito del cliente. La estabilidad y continuidad del proyecto
+recaen en el núcleo fundador y en aliados estratégicos como Conspat.
+
+3.1 Núcleo Fundador y Dirección
+
+   ●​ Eugenio Andreone, Socio Fundador: es Ingeniero de Producción. Ha
+      trabajado en empresas del sector textil e importador, liderando proyectos de
+      mejora de procesos tanto en áreas productivas como administrativas. Su
+      experiencia incluye optimización de procesos, automatización, marketing y
+      gestión financiera. En Solware dirige la visión estratégica, el desarrollo de
+      producto y las relaciones con clientes. Se distingue por su enfoque práctico,
+      su liderazgo en ventas consultivas y su compromiso con la mejora continua.
+   ●​ Jesús Freites, Socio Fundador: Especialista en desarrollo de software con
+      más de 4 años de experiencia en el área de IT. Trabajó en el Banco Caja
+      Social, en el área de soporte y desarrollo, donde adquirió dominio de
+      herramientas Oracle y manejo de Siebel CRM en entornos empresariales.
+      Actualmente es responsable de la arquitectura técnica de Solware y la
+      coordinación del equipo de programadores, destacando por su visión futurista,
+      capacidad de liderazgo y experiencia en automatización y soluciones digitales
+      escalables.
+
+3.2 Colaboradores Clave
+
+   ●​ Fabiana Andreone – Responsable de Marketing y Marca (part-time,
+      remoto): Actual Gerente de Marketing en TRK. Lidera campañas digitales,
+      identidad visual y posicionamiento de marca. Su experiencia fortalece la
+      presencia institucional y el desarrollo creativo de piezas para adquisición y
+      retención.
+   ●​ George Vargas, Elthon Abou'saada y René Chamorro, Programadores
+      (freelance, remoto): forman parte del equipo técnico con más de cinco meses
+      trabajando de manera continua en Solware. Su trabajo abarca tanto el
+      frontend como el backend, además de colaborar en aspectos de seguridad y
+      pruebas de QA. Se encargan de tareas de programación, mantenimiento de
+      código y soporte en la implementación de soluciones. Su entusiasmo,
+      compromiso con el aprendizaje y disposición para colaborar han sido
+      esenciales en la evolución de Solware.
+   ●​ Héctor Gonzalez, Generador de Contenido (freelance, remoto): Freelancer
+      con experiencia en contenido generado con IA. Produce piezas visuales,
+      copys y recursos gráficos para campañas y comunicación institucional.
+   ●​ Mayra, Coordinadora Administrativa y de Operaciones (part-time,
+      remoto): Organiza tareas, seguimiento de prioridades y uso de Odoo como
+      sistema de gestión interna. Lidera los seguimientos semanales del equipo y
+      actualmente se capacita para asumir formalmente el rol de Project Manager.
+
+
+                                                                                  8
+                                                               11DCOTN32N2525476
+
+
+
+
+   ●​ Williams Alfaro, Responsable de Riesgos y Finanzas (part-time, remoto):
+      Planifica y monitorea el flujo de caja, y define estrategias de mitigación de
+      riesgos financieros. Brinda soporte en el diseño de modelos financieros y
+      proyecciones.
+
+3.3 Aliado Estratégico: Laboratorio Conspat
+
+       Solware cuenta con el respaldo directo del Laboratorio Conspat, socio
+estratégico clave en la validación clínica y financiera de nuestras soluciones. Esta
+alianza representa tanto una fuente de financiamiento activo como un entorno real de
+prueba, lo que nos permite demostrar la efectividad de SolHub y SolIA en
+condiciones operativas reales.
+
+   ●​ Dra. Lorena Villarreal, patóloga clínica: especialista en diagnóstico, firma y
+      elaboración de informes clínicos. Su participación garantiza que las soluciones
+      de Solware cumplan con los estándares operativos y de precisión requeridos
+      en el sector salud, aportando rigor clínico, credibilidad y profundidad técnica.​
+
+   ●​ Francisco Vivas, socio de Solware e inversor activo: aporta supervisión
+      administrativa, coordinación contable y revisión legal, reforzando la solidez
+      institucional. Además, desde su rol en la directiva de Conspat, consolida la
+      alianza como puente entre el ámbito clínico y la gestión empresarial.
+
+      Esta colaboración convierte a Conspat en un caso de éxito, validando la
+propuesta de valor en el sector salud venezolano y sentando las bases para la
+expansión hacia otros laboratorios y clínicas en la región.
+
+Nota: aún no existe contrato formal firmado entre Solware y Conspat, pero se tiene
+previsto establecer un acuerdo de colaboración que consolide la relación
+institucional.
+
+3.4 Organigrama del Equipo actual
+
+
+
+
+                                                                                     9
+                                                           11DCOTN32N2525476
+
+
+
+
+3.5 Vacantes y Fortalecimiento del Equipo
+
+      Para consolidar su estructura operativa y escalar su modelo de negocio,
+Solware ha identificado las siguientes vacantes críticas:
+
+   ●​ Especialista en Ciberseguridad y Compliance: Será responsable del diseño
+      e implementación de políticas de seguridad, gestión de riesgos digitales y
+      cumplimiento normativo.
+   ●​ Responsable Legal: Encargado de revisar contratos, cumplir con normativas
+      locales e internacionales, y ofrecer asesoría jurídica en temas de propiedad
+      intelectual, protección de datos y regulación sanitaria.
+
+
+
+
+                                                                               10
+                                                              11DCOTN32N2525476
+
+
+
+
+   ●​ Contador General o Analista Financiero: Encargado de gestionar los
+      estados contables, proyecciones financieras, control presupuestario y
+      reporting para toma de decisiones.
+   ●​ Gestor(a) de Proyectos: Este rol está previsto para ser asumido por Mayra,
+      actual coordinadora administrativa, una vez finalice su proceso de
+      capacitación formal. El objetivo es formalizar una estructura ágil de
+      seguimiento de hitos, prioridades y gestión del tiempo y recursos.
+   ●​ Asesores de Ventas: Se encuentra en proceso de expansión del equipo
+      comercial para atender nuevos prospectos, dar seguimiento postventa y
+      mejorar la experiencia del cliente.
+
+      Estas incorporaciones están previstas para los próximos 6 a 12 meses, según
+disponibilidad presupuestaria y evolución de la demanda.
+
+3.6 Metodología de Trabajo
+
+       Solware trabaja actualmente con una metodología ágil tipo Kanban,
+organizada dentro de Odoo, donde se gestionan tareas por etapas. Se realizan
+reuniones de seguimiento semanales lideradas por Mayra, y la priorización se hace
+por entregables críticos. Se proyecta evolucionar hacia una estructura Scrum, con
+definición de roles y planificación por sprints. El equipo trabaja en formalizar un
+sistema de KPI de desempeño técnico y comercial para los próximos 3 meses. Este
+modelo de trabajo permite mantener agilidad, trazabilidad y enfoque en resultados,
+adaptándose a las necesidades cambiantes del negocio y los clientes.
+
+4. Marketing
+
+4.1 Mercado Objetivo
+
+       El mercado de SolHub abarca a todo el sector privado de salud en Venezuela:
+clínicas, laboratorios clínicos, laboratorios patológicos y centros de diagnóstico por
+imágenes. A continuación se presenta la segmentación realizada, basada en un
+levantamiento propio con herramientas de Data Scraper aplicadas sobre Google
+Maps, Infoguía y páginas verificadas de empresas.
+
+       El levantamiento de mercado se realizó con Data Scraper, una técnica de
+extracción automatizada de información desde fuentes abiertas (Google Maps,
+Infoguía y directorios en línea verificados). Esto garantiza que las cifras (≈39
+laboratorios patológicos, ≈141 centros de diagnóstico por imágenes, ≈1.200 clínicas y
+laboratorios generales) provienen de una base empírica y replicable, no de
+estimaciones.
+
+
+
+
+                                                                                   11
+                                                              11DCOTN32N2525476
+
+
+
+
+   ●​ Laboratorios patológicos (≈39 a nivel nacional): segmento altamente
+      especializado y nuestro punto de entrada prioritario. Este grupo enfrenta un
+      dolor crítico: la demora en la entrega de informes, ocasionada por procesos
+      manuales y falta de estandarización. Representa el nicho inicial donde
+      SolHub, con su módulo de IA Solpat, genera un impacto inmediato al agilizar
+      la redacción de informes y mejorar la consistencia diagnóstica.​
+      Centros de diagnóstico por imágenes (≈141 identificados): clínicas y
+      centros radiológicos privados que presentan la misma problemática operativa:
+      retrasos en resultados y duplicación de datos. Manejan grandes
+      volúmenes de estudios (rayos X, resonancias, ecosonogramas), pero carecen
+      de soluciones integrales que conecten recepción, informes y facturación en
+      una sola plataforma.
+   ●​ Laboratorios clínicos generales y clínicas privadas (≈1.200 entidades):
+      constituyen el mercado ampliado. Aunque muchos aún utilizan Excel, software
+      genéricos o sistemas administrativos contables (Profit, Galac, Saint), todos
+      comparten la necesidad de digitalizar procesos para ganar eficiencia, controlar
+      indicadores y asegurar cumplimiento local (moneda dual, SENIAT). Este grupo
+      representa la mayor base de expansión una vez validados los casos iniciales
+      en patología y radiología.
+   ●​ Expansión regional (LatAm): el mercado latinoamericano de salud digital
+      supera los USD 12 mil millones (2024) con una proyección de crecimiento
+      anual cercano al 20 %. Venezuela, rezagada en digitalización, ofrece la
+      oportunidad de validar un producto robusto y luego escalar hacia países con
+      necesidades similares, comenzando por ciudades intermedias y cadenas
+      privadas en Colombia, Perú y Centroamérica.
+
+4.2 Análisis de la Competencia
+
+      Software           Modelo de precios              Costos aproximados
+
+Galac (VE)             Licencia    anual      / Accesible, pero no clínico
+                       suscripción
+
+ZkyMed (Latam)         SaaS modular            $50–100/mes + setup
+
+Neogaleno (VE)         Bajo cotización         Variable + instalación
+
+XClinics (ES/Latam)    Suscripción fija        $29/mes (3 usuarios)
+
+Nursebuddy (INT)       Suscripción             $229/mes
+
+
+
+
+                                                                                  12
+                                                                11DCOTN32N2525476
+
+
+
+
+Clinic to Cloud (INT)   Suscripción              $499/mes + setup
+                        multiusuario
+
+Clinic             Cloud Planes escalonados      $27–47/mes
+(ES/Latam)
+
+Doctoralia (INT)        Suscripción por perfil   $50–70/mes
+
+Jedy Health (VE)        Suscripción escalada     $15/mes      (personal)   /   $175/mes
+                                                 (equipos) / custom
+
+
+
+       El mercado actual ofrece alternativas incompletas o de alto costo que no se
+adaptan al flujo real de laboratorios y clínicas. SolHub se diferencia al combinar
+cobertura integral, soporte local y un módulo de IA opcional con datos propios, bajo
+un modelo claro de implementación desde 3.000 USD más 500 USD mensuales en
+su plan más alto (hasta 5 sedes). En un año de operación, esto equivale a un costo
+real de ~0,69 USD por caso procesado, lo que demuestra que nuestra propuesta
+ofrece la mejor relación costo–beneficio para el sector salud venezolano.
+
+4.3 Estrategia de Comercialización
+
+       La estrategia diferencia decisores (dueños y gerentes, que buscan ROI e
+indicadores de control) de usuarios finales (recepción, técnicos y médicos, que
+buscan reducir demoras y errores). Esto nos permite adaptar el discurso comercial
+según el interlocutor: números claros para el decisor, experiencia de uso para el
+usuario.
+
+   1.​ Producto: SolHub es una plataforma administrativa integral que centraliza
+       procesos de laboratorio (pacientes, casos, pagos, reportes, analítica) y ofrece
+       un módulo opcional de IA (SolIA) para estandarizar informes.
+
+       Nuestro gancho de entrada es resolver el dolor más crítico del sector: la
+demora en la entrega de informes y la duplicación de tareas administrativas.
+Este es el dolor más inmediato y donde los laboratorios perciben un retorno más
+rápido.
+
+      En una segunda etapa, sobre esta base ya adoptada, incorporamos módulos
+de analítica avanzada y el asistente de IA clínica (SolIA). Esto asegura que el
+producto no intente abarcar todo desde el inicio, sino que consolide primero el flujo
+administrativo y, una vez validado, expanda su valor hacia áreas más sofisticadas.
+
+
+
+                                                                                   13
+                                                             11DCOTN32N2525476
+
+
+
+
+   2.​ Precio: Modelo mixto de setup inicial + suscripción mensual. El módulo de IA
+       se ofrece como un servicio adicional.
+   3.​ El canal prioritario es la venta consultiva, respaldada en casos de éxito como
+       Conspat y un programa de referidos. Los canales digitales (LinkedIn,
+       WhatsApp, web) y la pauta en Ads se plantean como apoyo táctico, no como
+       eje central. En paralelo, se implementarán promociones de entrada —como
+       pruebas extendidas o descuentos por pago anual adelantado— para facilitar la
+       adopción en contextos de alta inflación y asegurar ingresos recurrentes.
+          a.​ Ventas directas con asesores especializados.
+          b.​ Alianzas estratégicas con gremios médicos y proveedores de
+              tecnología.
+          c.​ Canales digitales (LinkedIn, WhatsApp, web) y referidos.
+          d.​ Demostraciones y pilotos controlados como puerta de entrada.​
+
+   4.​ Promoción:
+          a.​ Narrativa “Tu IA, tus datos” para mitigar el miedo a la adopción.
+          b.​ Casos de éxito: Conspat como validador clínico y prueba social.
+          c.​ Marketing de contenidos, presencia en congresos médicos y publicidad
+              segmentada en digital.
+
+4.4 Política de Precios
+
+                          Setup Inicial Suscripción Mensual
+        Servicio             (USD)             (USD)                  Usuarios
+
+         Plan 1           1.000 - 1.200           150                     10
+
+         Plan 2           2.000 - 2.500           250                     50
+
+         Plan 3           4.000 - 6.000           500                    100
+
+   Módulo IA (SolIA)      +500 – 800             +100                      -
+      opcional
+
+
+       El rango del setup inicial varía según el número de sedes, migración de datos
+y nivel de personalización requerido. La suscripción mensual depende de la cantidad
+de usuarios activos y volumen de casos procesados. Esto asegura una relación
+directa entre el valor recibido y la inversión realizada.
+
+       Más allá del acceso al sistema, la suscripción mensual garantiza
+mantenimiento preventivo, soporte continuo y actualizaciones inmediatas. A
+diferencia de modelos con pagos únicos y actualizaciones anuales, SolHub
+
+
+                                                                                  14
+                                                             11DCOTN32N2525476
+
+
+
+
+evoluciona de forma constante: cada cliente con suscripción activa recibe mejoras
+continuas, nuevas funciones y parches de seguridad sin costos adicionales. Esto
+asegura que la plataforma se mantenga alineada con cambios regulatorios y
+tecnológicos, reduciendo riesgos y evitando que los clientes trabajen con software
+obsoleto.
+
+​
+4.5 Gasto de Publicidad
+         Canal                                  Estrategia
+
+      LinkedIn Ads          Dirigido a gerentes clínicos, con meta de generar al
+                                     menos 30 leads calificados al mes
+
+      Google Ads             Publicidad orientada a leads y demos, con ventas
+                           consultivas, casos de éxito y promociones de entrada.
+
+ Email marketing / CRM                    Campañas de nurturing
+
+   Ferias y congresos                   Presencia en eventos clave
+
+4.6 KPIs de Marketing y Ventas
+
+   ●​ Leads generados por canal.
+   ●​ Costo por adquisición (CAC).
+   ●​ Número de demos realizadas.
+   ●​ Tasa de conversión demos → contratos.
+   ●​ Tiempo a valor (reducción en días de entrega de informes).
+   ●​ Retención anual de clientes.
+   ●​ Satisfacción (NPS).
+
+4.7 Análisis FODA
+
+
+
+
+                                                                                   15
+                                                               11DCOTN32N2525476
+
+
+
+
+5. Sistema de negocio y organización
+
+5.1 Concepto Central
+
+       Solware no es solo un proveedor de software, sino un acompañante
+tecnológico y asesor estratégico, omnipresente como un ángel a nivel tecnológico en
+todas las tareas y departamentos de su empresa. Nos posicionamos como el
+departamento de tecnología externo de cada laboratorio o clínica, asumiendo tareas
+que la mayoría no puede cubrir por falta de equipos internos. La propuesta de valor
+no se limita al mantenimiento del software: se centra en el acompañamiento
+tecnológico permanente, asegurando que nuestros clientes avancen en la adopción
+de nuevas herramientas y no se queden atrás en el panorama digital.
+
+5.2 Nuestro Enfoque
+
+Nuestro enfoque es simple y contundente:
+
+   ●​ Hiper Personalización: SolHub y SolIA se entregan como producto estándar
+      con plantillas y parámetros por vertical; ajustamos flujos y permisos sin afectar
+      el core. Las personalizaciones puntuales solo se aceptan si aportan valor
+      repetible o regulatorio, con alcance, costo y mantenimiento definidos.
+
+
+
+
+                                                                                    16
+                                                               11DCOTN32N2525476
+
+
+
+
+   ●​ Acompañamiento tecnológico continuo: guiamos la adopción de nuevas
+      herramientas y procesos, actuando como un aliado estratégico más que un
+      proveedor.
+   ●​ Mejora continua: mantenemos un ciclo constante de diagnóstico, capacitación
+      y optimización para que los clientes crezcan con nosotros.
+   ●​ Soporte humano + innovación: garantizamos la rentabilidad y escalabilidad del
+      modelo operativo mediante la estandarización de módulos, la definición de
+      límites claros en la hiper personalización y la sistematización de procesos que
+      se pueden replicar en nuevos clientes.
+
+5.3 Flujo del Sistema de Negocio
+
+Nuestro modelo combina asesoría, tecnología y soporte bajo un ciclo estructurado:
+
+   1.​ Diagnóstico de procesos y datos
+          ○​ Mapeo detallado de cómo opera actualmente el laboratorio.
+          ○​ Identificación de cuellos de botella y tareas repetitivas.
+          ○​ Co-creación con el cliente para adaptar la solución a su realidad (no al
+             revés).​
+
+   2.​ Personalización de SolHub
+          ○​ Configuración de roles, reportes, automatizaciones e integraciones.
+          ○​ Enfoque en eliminar retrabajos, reducir errores y aumentar la eficiencia.​
+
+   3.​ Carga inicial y puesta en marcha
+          ○​ Migración de datos, pruebas de interoperabilidad y validación clínica.​
+
+   4.​ Capacitación por rol
+         ○​ Entrenamientos diferenciados para cada perfil (recepcionistas, técnicos,
+            gerencia, patólogos).
+         ○​ Manuales rápidos y base de conocimiento en línea.​
+
+   5.​ Despliegue y adopción
+         ○​ Pilotos controlados con métricas de uso.
+         ○​ Ajustes y optimización según feedback.​
+
+   6.​ Soporte y acompañamiento continuo
+         ○​ Nivel 1: dudas de operación y adopción.
+         ○​ Nivel 2: soporte técnico especializado.
+         ○​ Consultoría tecnológica: evaluación e integración de               nuevas
+             herramientas externas.
+         ○​ Todo con métricas de adopción, monitoreo y mejora continua.
+
+
+
+                                                                                       17
+                                                              11DCOTN32N2525476
+
+
+
+
+5.4 Organización Interna
+
+   ●​ Dirección estratégica y de proyectos: lidera la visión, relaciones comerciales y
+      roadmap.
+   ●​ Equipo técnico: desarrollo del core, integraciones y soporte N2.
+   ●​ Asesores de ventas y éxito del cliente: acompañan la adopción y garantizan
+      resultados.
+   ●​ Coordinación operativa y administrativa: gestiona cronogramas, finanzas y
+      recursos.
+
+5.5 Cultura Corporativa (Valores y Normas)
+
+      En Solware creemos que la forma de trabajar es tan importante como el
+producto que entregamos. Nuestra cultura se define por:
+
+   ●​ Transparencia total: tanto hacia nuestros clientes como internamente; no hay
+      costos ocultos ni barreras en la comunicación.
+   ●​ Mentalidad open source: adoptamos y compartimos herramientas abiertas,
+      porque creemos en la colaboración y en el acceso libre al conocimiento.
+   ●​ Innovación constante: la IA y la tecnología cambian a diario, y nuestro equipo
+      se mantiene informado, compartiendo datos, pruebas y aprendizajes en
+      tiempo real.
+   ●​ Ambiente colaborativo: Colaboración y aprendizaje continuo: fomentamos un
+      equipo que comparte conocimiento y se adapta rápidamente, lo que nos
+      permite innovar más rápido que la competencia y reducir costos de
+      implementación.
+   ●​ Crecimiento conjunto: promovemos un entorno en el que todos mejoramos a
+      través de la curiosidad, el intercambio de información y la experimentación.
+
+5.6 Make vs. Buy (desarrollar vs. tercerizar)
+
+   ●​ Interno (make): desarrollo del core administrativo (casos, pacientes, médicos,
+      pagos, reportes, analítica en tiempo real), personalización y soporte.
+   ●​ Externo (buy): infraestructura en la nube, pasarelas certificadas, APIs de
+      mensajería y facturación homologada por el SENIAT.
+
+       Estas decisiones se reflejan directamente en la sección financiera,
+proyectando costos de personal en áreas críticas (desarrollo core, soporte) y ahorros
+al tercerizar infraestructura en la nube y APIs certificadas. Este balance permite
+crecer de forma rentable sin sobrecargar la estructura fija.
+
+
+
+
+                                                                                   18
+                                                                11DCOTN32N2525476
+
+
+
+
+5.7 Ventajas Mutuas con los Socios
+
+Nuestra colaboración con aliados como Conspat genera beneficios bilaterales:
+
+   ●​ Para Solware: validación clínica real, datos de uso y credibilidad en el sector
+      salud.
+   ●​ Para Conspat: acceso temprano a tecnología de vanguardia, optimización de
+      procesos internos y posicionamiento como pioneros en innovación. Este
+      modelo se puede replicar con futuras alianzas, asegurando que cada socio
+      estratégico gane al mismo tiempo que nosotros.
+
+      Además de Conspat, se evalúa la incorporación de futuros socios
+estratégicos como gremios médicos, aseguradoras privadas y proveedores de
+equipos de laboratorio, lo que diversifica las alianzas y refuerza la sostenibilidad del
+modelo.
+
+
+
+
+                                                                                     19
+                           11DCOTN32N2525476
+
+
+
+
+5.8 Business Model Canva
+
+
+
+
+                                          20
+                                                              11DCOTN32N2525476
+
+
+
+
+6. Calendario de realización
+
+6.1 Estrategia de Crecimiento
+
+      La estrategia de crecimiento de SolHub se fundamenta en un despliegue
+progresivo que combina avances legales, comerciales, técnicos y de mercadeo, con
+el objetivo de consolidar el sistema en Venezuela y luego escalar hacia
+Latinoamérica. Nuestro crecimiento se apoya en cuatro pilares:
+
+   1.​ Formalización y solidez institucional​
+       Durante los primeros meses, el foco estará en la legalización de la empresa y
+       del producto, así como en la definición del marco contable y fiscal. Esto
+       garantiza la capacidad de operar formalmente, homologar facturación ante el
+       SENIAT y establecer una base sólida de cumplimiento regulatorio.​
+
+   2.​ Consolidación tecnológica​
+       En paralelo, el desarrollo del sistema core y la validación del módulo de IA
+       (SolIA) se convierten en ejes centrales. El camino crítico técnico contempla la
+       estabilización del MVP, la integración de métodos de pago y la homologación
+       de facturación. La validación del LLM con el aliado clínico Conspat asegura
+       credibilidad y diferenciación frente a la competencia.​
+
+   3.​ Tracción comercial y marketing​
+       Mientras se completan los hitos legales y técnicos, se activa en paralelo la
+       estrategia comercial: generación de contenidos, presencia en congresos
+       médicos y campañas digitales. La meta es posicionar a SolHub como
+       referente en digitalización de salud, apoyándose en pilotos controlados con
+       laboratorios y clínicas estratégicas que funcionen como casos de éxito
+       bandera.​
+
+   4.​ Escalamiento y expansión regional​
+       Una vez validados los pilotos en Venezuela, inicia la fase de expansión a
+       nuevas ciudades del país (Caracas, Valencia, Maracaibo, Maracay y
+       Barquisimeto, que concentran más de 1.200 clínicas y 500 laboratorios), para
+       luego abrir operaciones en países de Latinoamérica donde la digitalización de
+       salud aún es incipiente. Esta expansión se apalanca en alianzas estratégicas,
+       integración de nuevos módulos (nómina, inventario, logística) y un modelo
+       SaaS escalable adaptable a cada mercado.
+
+
+
+
+                                                                                   21
+                                                              11DCOTN32N2525476
+
+
+
+
+       De esta forma, la estrategia asegura que cada bloque de trabajo (legal,
+técnico, comercial y de expansión) se complementa de forma ordenada, reduciendo
+riesgos y maximizando impacto en el mercado.
+
+6.2 Plan de desarrollo
+
+       El plan de desarrollo se organiza en fases con hitos claramente definidos. El
+Diagrama de Gantt y la tabla de hitos permiten visualizar la secuencia de actividades,
+los tiempos estimados y los objetivos estratégicos que guían la consolidación de
+SolHub, desde la formalización legal hasta la expansión comercial.
+
+         Diagrama de Gantt
+
+Hitos
+          Fase             Hito              Descripción              Semana objetivo
+
+Fase 1 – Formalización y    H1      Registros legales de empresa,         Semana 6
+      Base Legal                     marca y producto concluidos
+
+                            H2     Marco contable–fiscal definido y       Semana 4
+                                              validado
+
+   Fase 2 – Desarrollo      H3        Homologación del SENIAT            Semana 16
+        Técnico
+
+                            H4      Métodos de pago integrados y         Semana 14
+                                             operativos
+
+                            H5    MVP estabilizado y en producción        Semana 8
+
+                            H6    LLM (modelo de lenguaje grande)        Semana 24
+                                    SolIA – validado por Conspat
+
+Fase 3 – Consolidación y    H7       Validación consolidada con          Semana 20
+  Expansión Comercial                Conspat (uso real y mejoras
+                                              continuas)
+
+                            H8    Primeros contratos firmados fuera     Semana 24+
+                                   de Conspat/expansión a nuevas
+                                             ciudades
+
+
+
+
+                                                                                   22
+                                                            11DCOTN32N2525476
+
+
+
+
+7. Riesgos
+
+7.1 Identificación y gestión de riesgos
+
+Ciberseguridad y compliance
+
+   ●​ Riesgo: Una brecha en la seguridad de datos clínicos podría derivar en
+      sanciones y pérdida de confianza.
+   ●​ Mitigación:     Implementar cifrado, accesos por rol y auditorías
+      periódicas.“Además, al estar desarrollado con lenguajes modernos como
+      React y Next.js, SolHub presenta una barrera de seguridad adicional: a
+      diferencia de software comercial con largos historiales de vulnerabilidades
+      conocidas, nuestra arquitectura más reciente y menos expuesta dificulta los
+      ataques automatizados y reduce la superficie de riesgo frente a hackers. El
+      hecho de ser una plataforma nueva y con documentación pública limitada
+      también representa una ventaja de seguridad, ya que aún no existen
+      manuales ni vulnerabilidades ampliamente difundidas que puedan ser
+      explotadas.
+   ●​ Plan en escenario pésimo: Mantener copias de seguridad, protocolos de
+      respuesta rápida y seguros de ciber responsabilidad.
+
+Homologación SENIAT
+
+   ●​ Riesgo: Retrasos en la aprobación de facturación electrónica.
+   ●​ Mitigación: Plan regulatorio temprano, asesoría fiscal y un plan B de
+      facturación manual temporal. Además, mantener monitoreo constante de
+      cambios legales y regulatorios (SENIAT, LOPD, normativa sanitaria),
+      asegurando actualizaciones periódicas para no caer en vacíos legales ni
+      cometer infracciones involuntarias.
+   ●​ Impacto cuantitativo: Podría retrasar el flujo de caja en 1–2 meses (≈10 % de
+      ingresos).
+   ●​ Plan en escenario pésimo: Operar con facturación manual temporal y negociar
+      flexibilidad con clientes.
+
+Adopción de usuarios (recepción y administrativos)
+
+   ●​ Riesgo: Baja adopción podría disminuir la productividad.
+   ●​ Mitigación: Capacitación por rol, manuales rápidos y métricas de adopción.
+   ●​ Impacto cuantitativo: Una adopción <70 % implicaría 15–20 % más de tiempo
+      operativo.
+   ●​ Plan en escenario pésimo: Reforzar soporte N1 gratuito los primeros 3 meses
+      y simplificar procesos críticos.
+
+
+
+                                                                                23
+                                                               11DCOTN32N2525476
+
+
+
+
+Dependencia de integraciones (pagos/mensajería)
+
+   ●​ Riesgo: Las APIs de bancos, al ser on demand, pueden saturarse o estar
+      fuera de servicio en horarios de alto tráfico, afectando confirmaciones de
+      pagos en línea.
+   ●​ Mitigación: Implementar mecanismos de fallback que permitan, en caso de
+      que la API bancaria no responda, guardar la transacción en cola y reintentarlo
+      automáticamente en intervalos de minutos; mantener integraciones con más
+      de un banco para diversificar riesgos y reducir la dependencia de un solo
+      proveedor; y avisar al usuario con notificaciones claras (por ejemplo, “pago en
+      verificación”) en lugar de mostrar un error, evitando desconfianza y pérdida de
+      operaciones.
+   ●​ Impacto cuantitativo: Una indisponibilidad bancaria de 24 horas podría
+      retrasar hasta un 15 % de los cobros de clientes activos en ese período.​
+      Plan en escenario pésimo: Habilitar temporalmente cobros manuales
+      (transferencias verificadas con conciliación interna) o usar pasarelas de
+      terceros (ej. Pago Móvil, Zelle) hasta que las APIs bancarias estén operativas.
+
+Vacíos internos (PM y finanzas)
+
+   ●​ Riesgo: La falta de gestión de proyectos y control contable genera desvíos de
+      cronograma y caja.
+   ●​ Mitigación: Asignar un PM dedicado y apoyo contable externalizado al inicio.
+   ●​ Impacto cuantitativo: Podría generar sobrecostos de 10–15 %.
+   ●​ Plan en escenario pésimo: Reorganizar prioridades, reducir gastos no
+      esenciales y retrasar expansiones hasta estabilizar.
+
+LLM (privacidad, sesgos, alucinaciones)
+
+   ●​ Riesgo: El módulo SolIA puede generar errores bajo supervisión.
+   ●​ Mitigación: Mantenerlo como opcional, datos anonimizados y supervisión
+      médica.
+   ●​ Impacto cuantitativo: Una incidencia podría retrasar entregas y generar costos
+      legales.
+   ●​ Plan en escenario pésimo: Suspender el uso del módulo hasta resolver la
+      causa y reforzar la validación.
+
+Competencia
+
+   ●​ Riesgo: Ingreso de softwares internacionales o locales de bajo costo.
+   ●​ Mitigación: Diferenciación en personalización, soporte local y precios flexibles.
+   ●​ Impacto cuantitativo: Podría reducir la cuota de mercado proyectada en 20 %.
+
+
+
+
+                                                                                     24
+                                                             11DCOTN32N2525476
+
+
+
+
+   ●​ Plan en escenario pésimo: Concentrarse en nichos (patología y radiología)
+      donde la personalización es clave.
+
+Demanda
+
+   ●​ Riesgo: Que clínicas y laboratorios reduzcan sus inversiones por factores
+      macroeconómicos.
+   ●​ Mitigación: Pruebas gratuitas más largas o descuentos es útil en tiempos
+      económicos difíciles. Esto asegura ingresos y protege al cliente de aumentos
+      mensuales, especialmente con alta inflación.
+   ●​ Impacto cuantitativo: Una contracción del 15 % en clientes ralentiza 6–12
+      meses el crecimiento.
+   ●​ Plan en escenario pésimo: Focalizar en clientes medianos y grandes con más
+      capacidad de pago.
+
+Oferta / Proveedores
+
+   ●​ Riesgo: Caídas en infraestructura de terceros (cloud, pasarelas).
+   ●​ Mitigación: Uso de redundancia, contratos con SLAs y proveedores
+      secundarios.
+   ●​ Impacto cuantitativo: Podría representar 5 % de ingresos anuales en
+      reembolsos o fallos de servicio.
+   ●​ Plan en escenario pésimo: Migrar a infraestructura híbrida (local + cloud) para
+      garantizar continuidad.
+
+Abandono de clientes, churn (la pérdida de clientes activos en un período
+determinado)
+
+   ●​ Riesgo: Pérdida de clientes activos por falta de seguimiento, servicio
+      insuficiente o adopción incompleta de la plataforma.
+   ●​ Mitigación: Programas de fidelización, soporte proactivo, encuestas de
+      satisfacción y seguimiento trimestral con métricas de uso. Implementación de
+      un área de Customer Success para acompañar a cada cliente durante el
+      primer año.
+   ●​ Impacto cuantitativo: Una tasa de churn superior al 10 % anual reduciría los
+      ingresos recurrentes en más de un 20 %, afectando la rentabilidad proyectada.​
+      Plan en escenario pésimo: Reforzar soporte dedicado, ofrecer descuentos por
+      renovación anticipada y lanzar paquetes de valor agregado (ej. analítica
+      avanzada o capacitación extendida) para retener a clientes estratégicos.
+
+
+
+
+                                                                                  25
+                                                               11DCOTN32N2525476
+
+
+
+
+8. Financiamiento
+
+      Este módulo presenta la estructura financiera proyectada del proyecto
+Solware, abordando los distintos componentes que sustentan su viabilidad
+económica: gastos únicos, costos operativos, ingresos estimados, flujo de caja y
+requerimientos de capital para cada escenario. El análisis permite visualizar las
+necesidades de inversión inicial, los márgenes de sostenibilidad y los retornos
+esperados en distintos horizontes de tiempo.
+
+       Para consultar los cálculos completos, supuestos por escenario y resultados
+financieros detallados, se encuentra disponible el documento:
+
+   Proyección Finanzas -Solware Solhub
+
+8.1 Gastos Únicos
+
+       El plan financiero de Solware se fundamenta en un análisis estructurado de
+ingresos y egresos, considerando tanto los elementos obligatorios para la
+constitución de la empresa como los escenarios proyectados de operación. En esta
+primera sección se presentan los gastos únicos, aquellos desembolsos iniciales que
+resultan indispensables para la formalización legal, la protección de la marca, la
+elaboración de contratos y el diseño del manual de identidad corporativa. Se trata de
+inversiones de carácter no recurrente, que se realizan exclusivamente en el año cero
+y que constituyen la base sobre la cual se construye el modelo financiero de la
+compañía.
+
+       Los rubros considerados incluyen la constitución de la empresa por vía regular
+(carta del comisario, inventario de bienes, documento constitutivo, publicación en
+Gaceta Oficial, trámites ante IVSS, BANAVIH, INCES y MINTRA, RUPDAE, libros
+legales y RIF), el registro de marca ante el SAPI, la redacción de contratos laborales,
+de propiedad intelectual y de licencia de uso, así como el desarrollo del manual de
+marca.
+
+8.1.1 Gastos únicos por puesto de trabajo
+
+       La empresa contempla una inversión inicial asociada al equipamiento
+individual de cada integrante del equipo. Este desembolso corresponde al costo de
+dotar cada puesto de trabajo con los recursos necesarios para garantizar
+productividad y estandarización. Al tratarse de un gasto único, se activa únicamente
+
+
+
+
+                                                                                    26
+                                                                  11DCOTN32N2525476
+
+
+
+
+al momento de la incorporación de nuevo personal, y constituye un indicador directo
+de la capacidad de crecimiento proyectada en cada escenario.
+
+          Categoría                                     Detalle
+
+                                Computadora (laptop i7/Ryzen7, 16GB RAM, SSD
+                                                   256GB)
+
+                                               Monitor externo 24″
+
+                                           Teclado + mouse inalámbrico
+   Equipamiento de Oficina
+                                           Escritorio tipo oficina 120 cm
+
+                                                    Silla ergonómica
+
+                                                      UPS 600 VA
+
+                                              Regleta con protección
+
+
+
+8.1.2 Gastos únicos de infraestructura compartida
+
+       De forma complementaria, se consideran gastos únicos vinculados a la
+infraestructura común de la oficina. Estos recursos no se asignan a un trabajador
+específico, sino que representan la base operativa de la empresa: comunicaciones,
+conectividad, seguridad, equipos de uso colectivo y otros elementos que aseguran
+condiciones adecuadas de trabajo. Al ser esenciales para el funcionamiento
+organizacional, su adquisición se concentra en la fase de arranque y no se repite en
+ejercicios posteriores.
+
+           Categoría                                     Detalle
+
+                                             Teléfono para la empresa
+
+                                           Router empresarial dual‑band
+
+                                               Módem / backup LTE
+    Equipamiento de Oficina
+                                                          TV 55
+
+                                                         Tablets
+
+
+
+                                                                                 27
+                                                               11DCOTN32N2525476
+
+
+
+
+                                                 Disco duro en la nube
+
+                                              Switch Ethernet + cableado
+
+                                                Impresora multifunción
+
+                                                 Microondas de oficina
+
+                                          Refrigerador pequeño (mini nevera)
+
+                                                  Cafetera de oficina
+
+                                              Cámaras de seguridad (x2)
+
+                                            Sistema de alarma + sensores
+
+                                             Cerradura inteligente + bridge
+
+8.1.3 Variación según escenarios
+
+       A diferencia de los gastos únicos fijos, ciertos componentes del equipamiento
+presentan una variación proporcional al crecimiento proyectado de la empresa. En
+particular, los costos por puesto de trabajo (hardware, mobiliario, periféricos) se
+ajustan según el número de colaboradores estimados en cada escenario (optimista,
+neutro y pesimista). En cambio, los gastos asociados a infraestructura compartida
+(como routers, módems, switch o UPS generales) se consideran constantes, ya que
+se adquieren una sola vez como base operativa.
+
+       Esta segmentación permite reflejar de manera más precisa el impacto
+financiero de la expansión organizacional en cada escenario. Los valores detallados
+para cada caso se encuentran desglosados en el archivo Excel adjunto, en la hoja
+correspondiente a gastos únicos.
+
+8.2 Gastos Recurrentes
+
+       Además de los gastos únicos iniciales, la operación de Solware requiere una
+estructura de gastos recurrentes que se ajusta según la evolución del negocio y el
+escenario proyectado. Estos rubros representan el soporte continuo de la empresa y
+constituyen el principal componente de la proyección financiera a lo largo de los
+cinco años proyectados.
+
+      En primer lugar, se incluye el servicio de contabilidad y gestión tributaria, que
+abarca los honorarios de un proveedor externo para la administración de impuestos,
+nómina y cierres contables, basado en librerías fiscales y APIs certificadas
+
+
+                                                                                    28
+                                                              11DCOTN32N2525476
+
+
+
+
+desarrolladas e integradas por Solware, lo que garantiza cumplimiento normativo sin
+necesidad de pagar software especializado externo. Así, aplicamos internamente las
+mismas soluciones que ofrecemos a nuestros clientes.
+
+        El segundo bloque corresponde a plataformas y tecnología, que concentran
+las herramientas esenciales para el desarrollo, despliegue y operación de las
+soluciones de Solware. Aquí se contemplan licencias de software de programación y
+automatización, bases de datos, servicios de hosting, consumo de APIs de
+inteligencia artificial, suscripciones a servicios de comunicación y CRM, así como
+campañas de marketing digital en canales como Google, Meta o Tik Tok. Estas
+herramientas representan un gasto recurrente fundamental para sostener la
+competitividad y asegurar la calidad de los servicios entregados a los clientes.
+
+       El tercer componente se relaciona con la capacitación y el desarrollo del
+talento humano, tanto en el área técnica como en habilidades blandas y comerciales.
+La actualización constante del equipo en nuevas tecnologías, técnicas de ventas y
+gestión de recursos humanos es indispensable para mantener la innovación y
+consolidar la cultura de aprendizaje continuo dentro de la empresa.
+
+      En cuarto lugar, los sueldos y compensaciones del personal representan el
+gasto de mayor peso dentro de la estructura financiera. Este rubro incluye tanto a los
+fundadores como al equipo técnico, comercial y administrativo, además de los
+asesores externos y aliados estratégicos que aportan valor a la operación. La
+magnitud de este gasto varía directamente en función del número de empleados
+contemplado en cada escenario y de los ajustes salariales que acompañan el
+crecimiento de la empresa.
+
+       El apartado de gastos administrativos comprende el alquiler de la oficina, los
+servicios básicos asociados (electricidad, internet y agua), así como los insumos de
+papelería y limpieza requeridos para el funcionamiento cotidiano. A esto se suman
+los costos de transporte para traslados a clientes y visitas comerciales.
+
+       Finalmente, se proyectan los viáticos, que incluyen alimentación, hospedajes
+puntuales y la participación en congresos o eventos profesionales. Estos gastos
+están directamente vinculados a la actividad comercial y de representación de la
+empresa, y responden tanto a la necesidad de mantener cercanía con los clientes
+como a la de posicionar a Solware en espacios de networking del sector salud y
+tecnológico.
+
+   ●​ Gastos variables escenario Óptimo.
+
+      En el escenario optimista, los gastos recurrentes muestran un crecimiento
+sostenido y acelerado. Este aumento responde principalmente a la expansión del
+
+
+                                                                                   29
+                                                               11DCOTN32N2525476
+
+
+
+
+equipo, la mejora en compensaciones y la inversión más robusta en plataformas
+tecnológicas y capacitación, acompañando el ritmo de crecimiento del negocio.
+
+   ●​ Gastos variables escenario Neutro
+
+       En el escenario neutro, los gastos recurrentes evolucionan de forma gradual y
+controlada. El crecimiento del equipo y las inversiones tecnológicas se realizan de
+manera escalonada, manteniendo un balance entre eficiencia operativa y
+sostenibilidad financiera.
+
+   ●​ Gastos variables escenario Pesimista
+
+      En el escenario pesimista, los gastos recurrentes se mantienen en niveles
+mínimos para asegurar únicamente la operatividad esencial. La empresa prioriza la
+cobertura de necesidades básicas, limitando contrataciones, incrementos salariales y
+nuevas inversiones tecnológicas.
+
+       Cabe destacar que varios de estos componentes (facturación, reportes y
+automatizaciones básicas) son desarrollados internamente por Solware, reduciendo
+la dependencia de software especializado externo. De esta manera, los gastos
+recurrentes en plataformas y tecnología corresponden únicamente a servicios
+indispensables de terceros (hosting, APIs externas, campañas de marketing),
+optimizando costos y demostrando coherencia entre nuestra propuesta de valor y
+nuestra propia operación.
+
+8.2 Ingresos proyectados
+
+       El modelo de ingresos de Solware se construye en torno a los planes de
+suscripción de su plataforma administrativa (SolHub), complementados por servicios
+de implementación, asesorías, desarrollos web, agentes de inteligencia artificial y
+proyectos de automatización. Los precios fueron definidos con base en un análisis de
+costos internos y un benchmarking frente a competidores directos en el sector salud,
+garantizando tanto competitividad como sostenibilidad.
+
+        Se estructuraron tres planes principales de suscripción, diferenciados según la
+cantidad de usuarios que atienden, junto con ingresos asociados a la implementación
+inicial, la personalización de módulos de inteligencia artificial (SolIA), soporte
+continuo y otros servicios tecnológicos complementarios. Adicionalmente, se
+incorporó una tasa de deserción anual del 10 %, en línea con los promedios
+internacionales en soluciones SaaS para el sector salud, y un margen adicional de
+holgura del 3 % para robustecer la proyección de sostenibilidad a largo plazo.
+
+
+
+
+                                                                                    30
+                                                              11DCOTN32N2525476
+
+
+
+
+       Los ingresos proyectados bajo los escenarios optimista, neutro y pesimista
+incluyendo los distintos tipos de servicios, precios, frecuencia y tasas de retención
+pueden consultarse en detalle en el documento Excel adjunto, hoja de ingresos
+proyectados.
+
+              Servicio                      Ingreso mensual       Ingreso único
+
+       Implementación Plan 1                                          $1.000
+
+               Plan 1                            $150
+
+       Implementación Plan 2                                          $2.500
+
+               Plan 2                            $250
+
+       Implementación Plan 3                                          $4.000
+
+               Plan 3                            $500
+
+                SolIA                            $100
+
+           Asesoramiento                                               $100
+
+                Webs                                                  $1.200
+
+             Agentes IA                          $100
+
+         Automatizaciones                                              $500
+
+
+
+
+8.3 Flujo de caja y viabilidad financiera
+
+       Para evaluar la viabilidad financiera del proyecto, se elaboró un flujo de caja
+proyectado a cinco años que contempla los ingresos recurrentes y no recurrentes,
+así como los egresos fijos y variables asociados a la operación, escalamiento e
+inversión inicial de Solware. Esta proyección permite visualizar de forma estructurada
+la evolución del negocio en distintos escenarios, considerando tanto la expansión
+
+
+
+
+                                                                                   31
+                                                               11DCOTN32N2525476
+
+
+
+
+progresiva del número de clientes como la incorporación gradual de personal técnico
+y comercial.
+
+       La metodología aplicada parte del análisis mensual de ingresos esperados,
+contrastados con los costos operativos y gastos únicos estimados. Se incluyen
+factores clave como la tasa de deserción, tiempos de implementación, márgenes de
+contribución por línea de servicio y estructura de costos asociada a cada etapa de
+crecimiento.
+
+       A partir de esta proyección, se calcularon indicadores clave de rentabilidad
+como el Valor Presente Neto (VPN), la Tasa Interna de Retorno (TIR) y el retorno
+sobre inversión (ROI), con el objetivo de estimar el potencial de recuperación del
+capital invertido y la sostenibilidad del modelo en el tiempo. Asimismo, se evaluó el
+punto de equilibrio operativo, identificando el momento en que los ingresos
+recurrentes cubren completamente los costos fijos y variables de la operación.
+
+       La comparación entre escenarios (pésimo, neutro y optimista) permite analizar
+el comportamiento del flujo de caja ante variaciones en el ritmo de adquisición de
+clientes, retención, estructura de precios y escalamiento de la operación, brindando
+una visión integral del riesgo financiero y la capacidad de adaptación del modelo.
+
+      Todos los cálculos, supuestos y resultados pueden ser consultados en la hoja
+correspondiente al flujo de caja, incluida en la documentación financiera del proyecto.
+
+9. Demo en vivo: SolHub en acción
+
+       El MVP de SolHub se encuentra disponible en un ambiente de prueba, donde
+los lectores pueden explorar de forma segura las principales funcionalidades del
+sistema. Esta demostración muestra cómo la plataforma centraliza la gestión de
+pacientes, casos, pagos y reportes en tiempo real, validando su potencial en un
+entorno controlado.
+
+
+
+      MVP: https://panel.solware.agency/
+
+      Usuario: solwareve@gmail.com
+
+      Clave: CONCURSOIDEA
+
+      Manual de usuario
+
+
+
+                                                                                    32
+                                                              11DCOTN32N2525476
+
+
+
+
+10. Referencias
+FasterCapital. (2025, 5 de abril). Churn rate for healthtech attrition: Churn rate
+      benchmarking in the HealthTech industry. Recuperado el 8 de septiembre de
+      2025                                                                          de
+      https://fastercapital.com/content/Churn-rate-for-healthtech-attrition--Churn-Rat
+      e-Benchmarking-in-the-HealthTech-Industry.html
+
+Exploding Topics. (2025). Customer retention rates by industry. Recuperado el 8 de
+      septiembre                     de                   2025                  de
+      https://explodingtopics.com/blog/customer-retention-rates
+
+My SaaS Journey. (2025, 19 de enero). SaaS statistics 2025. Recuperado el 8 de
+     septiembre de 2025 de https://mysaasjourney.com/saas-statistics-2025/
+
+Recurly. (s.f.). Customer churn benchmarks: How does your churn rate compare?
+      Recuperado         el     8      de      septiembre de      2025     de
+      https://recurly.com/research/churn-rate-benchmarks/
+
+Infoguía Venezuela. (s.f.-a). Clínicas, hospitales y centros médicos en Caracas.
+       Recuperado         el     8     de      septiembre     de      2025       de
+       https://infoguia.com/ct.asp?cat=757&ciud=41&key=clinicas-hospitales-centro-
+       medico-caracas
+
+Infoguía Venezuela. (s.f.-b). Estudios patológicos en Valencia. Recuperado el 8 de
+       septiembre                     de                  2025                  de
+       https://infoguia.com/ct.asp?cat=2893&ciud=55&key=estudios-patologicos-vale
+       ncia
+
+Infoguía Venezuela. (s.f.-c). Laboratorios clínicos en Valencia. Recuperado el 8 de
+       septiembre                     de                   2025                  de
+       https://infoguia.com/ct.asp?cat=759&ciud=55&key=laboratorios-clinicos-valenc
+       ia
+
+World Health Organization. (s.f.). Global strategy on digital health. Recuperado el 8
+      de septiembre de 2025 de https://www.who.int/ehealth
+
+OECD. (s.f.). Digital health. Recuperado el 8 de septiembre de 2025 de
+    https://www.oecd.org/health/digital-health.htm
+
+ZkyMed. (s.f.). ZkyMed Software para clínicas y laboratorios. Recuperado el 8 de
+     septiembre de 2025 de https://zkymed.com
+
+
+
+
+                                                                                   33
+                                                              11DCOTN32N2525476
+
+
+
+
+Galac Software. (s.f.). Soluciones administrativas Galac. Recuperado el 8 de
+     septiembre de 2025 de https://www.galac.com
+
+Neogaleno. (s.f.). Software médico Neogaleno. Recuperado el 8 de septiembre de
+     2025 de https://neogaleno.com
+
+Supabase. (s.f.). The open source Firebase alternative. Recuperado el 8 de
+     septiembre de 2025 de https://supabase.com
+
+Vercel. (s.f.). Vercel: Develop. Preview. Ship. Recuperado el 8 de septiembre de 2025
+       de https://vercel.com
+
+HIMSS. (2023). Artificial intelligence in healthcare. Recuperado el 8 de septiembre de
+     2025 de https://www.himss.org/resources/artificial-intelligence-healthcare
+
+IEEE. (s.f.). AI in healthcare. Recuperado el 8 de septiembre de 2025 de
+      https://healthinformatics.ieee.org/
+
+Conspat. (s.f.). Laboratorio Conspat. Recuperado el 8 de septiembre de 2025 de
+     https://www.conspat.com
+
+
+
+
+                                                                                   34
+
