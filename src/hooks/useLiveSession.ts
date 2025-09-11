@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
-import { socketManager, SesionInteractiva, Pregunta, Encuesta, Reaccion } from '@/lib/socket'
+import { socketManager, SesionInteractiva, Pregunta, Encuesta, Reaccion } from '@src/lib/socket'
 import { Socket } from 'socket.io-client'
 
 export function useLiveSession(codigoSesion: string) {

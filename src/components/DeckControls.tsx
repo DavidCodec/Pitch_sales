@@ -1,21 +1,17 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
-import { Progress } from '@/components/ui/progress'
+import { Button } from '@src/components/ui/button'
+import { Progress } from '@src/components/ui/progress'
 import { 
   ChevronLeft, 
   ChevronRight, 
   Home, 
   Maximize, 
-  Minimize, 
-  Moon, 
-  Sun,
+  Minimize,
   Menu,
-  Users
 } from 'lucide-react'
-import { useTheme } from 'next-themes'
-import { cn } from '@/lib/utils'
+import { cn } from '@src/lib/utils'
 
 interface DeckControlsProps {
   slideActual: number
@@ -37,13 +33,10 @@ const secciones = [
 export function DeckControls({ 
   slideActual, 
   totalSlides, 
-  onCambiarSlide, 
-  onToggleInteractividad,
-  participantes = 0 
+  onCambiarSlide
 }: DeckControlsProps) {
   const [pantallaCompleta, setPantallaCompleta] = useState(false)
   const [mostrarMiniMapa, setMostrarMiniMapa] = useState(false)
- 	const { theme, setTheme } = useTheme()
 
 	const progreso = ((slideActual + 1) / totalSlides) * 100
 
