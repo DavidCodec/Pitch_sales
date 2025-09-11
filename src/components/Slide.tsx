@@ -4,7 +4,7 @@ import { ReactNode } from 'react'
 
 import { motion } from 'framer-motion'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@src/lib/utils'
 
 interface SlideProps {
 	children: ReactNode
@@ -91,7 +91,7 @@ interface ListaSlideProps {
 export function ListaSlide({ items, className }: ListaSlideProps) {
   return (
     <ul className={cn('space-y-1 sm:space-y-2 md:space-y-3 h-full overflow-hidden', className)}>
-      {items.map((item, index) => (
+      {items.map((item: any, index: any) => (
         <motion.li
           key={index}
           initial={{ opacity: 0, x: -20 }}

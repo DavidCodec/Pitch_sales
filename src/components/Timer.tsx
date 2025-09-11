@@ -1,10 +1,10 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import { Button } from '@src/components/ui/button'
+import { Input } from '@src/components/ui/input'
 import { Clock, Play, Pause, RotateCcw, Settings } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import { cn } from '@src/lib/utils'
 
 interface TimerProps {
 	className?: string
@@ -50,7 +50,7 @@ export function Timer({
 		return minutos * 60 + segundos
 	}
 
-	const [tiempoPersonalizado, setTiempoPersonalizado] = useState(defaultDuration)
+	const [, setTiempoPersonalizado] = useState(defaultDuration)
 	const [inputTiempo, setInputTiempo] = useState(segundosATiempo(defaultDuration))
 	const [modoCompacto, setModoCompacto] = useState(true)
 	const [hovering, setHovering] = useState(false)
