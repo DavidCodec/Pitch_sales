@@ -93,42 +93,6 @@ export default function Home() {
             </CardContent>
           </Card>
         </div>
-
-        {/* Features */}
-        <div className="mt-20">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Características de la Presentación
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-6 h-6 text-green-600" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Interactividad en Tiempo Real</h3>
-              <p className="text-gray-600">
-                Preguntas, encuestas y reacciones de la audiencia durante la presentación
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Presentation className="w-6 h-6 text-blue-600" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Navegación Avanzada</h3>
-              <p className="text-gray-600">
-                Controles por teclado, mini-mapa de secciones y modo pantalla completa
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Play className="w-6 h-6 text-purple-600" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Demo Interactiva</h3>
-              <p className="text-gray-600">
-                La audiencia puede votar qué módulo del producto quiere ver en acción
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

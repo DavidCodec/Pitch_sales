@@ -10,6 +10,19 @@ import { Badge } from '@/components/ui/badge'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
 import { generarCodigoSesion } from '@/lib/utils'
 import { generarDatosGrafico } from '@/lib/ai'
+import {
+	Palette,
+	ChartPie,
+	BarChart3,
+	Trophy,
+	Bot,
+	Zap,
+	Settings,
+	TrendingUp,
+	Clock,
+	PieChart as PieChartIcon,
+	Smartphone,
+} from 'lucide-react'
 
 const slides = [
 	// Slide 1: Portada
@@ -61,27 +74,33 @@ const slides = [
 					<div className="grid md:grid-cols-3 gap-8">
 						<Card className="border-red-200 bg-red-50">
 							<CardHeader>
-								<CardTitle className="flex items-center text-red-700">📊 Sistemas Obsoletos</CardTitle>
+								<CardTitle className="flex items-center text-red-700">
+									<BarChart3 className="mr-2" size={20} />
+									Sistemas Obsoletos
+								</CardTitle>
 							</CardHeader>
 							<CardContent>
 								<div className="space-y-2">
 									<div className="text-2xl font-bold text-red-600">1.700+</div>
-									<div className="text-sm">laboratorios y clínicas</div>
+									<div className="text-sm">laboratorios en el país</div>
 									<div className="text-2xl font-bold text-red-600">Excel/Manual</div>
-									<div className="text-sm">gestión actual</div>
+									<div className="text-sm">Baja proteccion de datos</div>
 								</div>
 							</CardContent>
 						</Card>
 
 						<Card className="border-orange-200 bg-orange-50">
 							<CardHeader>
-								<CardTitle className="flex items-center text-orange-700">⏱️ Demoras Críticas</CardTitle>
+								<CardTitle className="flex items-center text-orange-700">
+									<Clock className="mr-2" size={20} />
+									Demoras Críticas
+								</CardTitle>
 							</CardHeader>
 							<CardContent>
 								<div className="space-y-2">
 									<div className="text-2xl font-bold text-orange-600">12-15 min</div>
-									<div className="text-sm">tiempo actual por caso</div>
-									<div className="text-2xl font-bold text-orange-600">6-9 min</div>
+									<div className="text-sm">tiempo manual por caso</div>
+									<div className="text-2xl font-bold text-orange-600">4-6 min</div>
 									<div className="text-sm">tiempo con SolHub</div>
 								</div>
 							</CardContent>
@@ -89,7 +108,10 @@ const slides = [
 
 						<Card className="border-yellow-200 bg-yellow-50">
 							<CardHeader>
-								<CardTitle className="flex items-center text-yellow-700">📈 Sin Indicadores</CardTitle>
+								<CardTitle className="flex items-center text-yellow-700">
+									<TrendingUp className="mr-2" size={20} />
+									Sin Indicadores
+								</CardTitle>
 							</CardHeader>
 							<CardContent>
 								<div className="space-y-2">
@@ -132,7 +154,7 @@ const slides = [
 						<div className="space-y-6">
 							<div className="flex items-start space-x-4">
 								<div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-									<span className="text-blue-600 font-bold">⚡</span>
+									<Zap className="text-blue-600" size={24} />
 								</div>
 								<div>
 									<h3 className="text-xl font-semibold mb-2">Automatización de Procesos</h3>
@@ -149,7 +171,7 @@ const slides = [
 								<div>
 									<h3 className="text-xl font-semibold mb-2">Indicadores en Tiempo Real</h3>
 									<p className="text-gray-600">
-										Métricas de ingresos, productividad, casos pendientes y estudios más solicitados
+										Métricas personalizables, productividad, casos pendientes y estudios más solicitados
 									</p>
 								</div>
 							</div>
@@ -213,58 +235,6 @@ const slides = [
 	},
 
 	// Slide 5: Producto
-	{
-		id: 'producto',
-		component: () => (
-			<Slide variante="visual">
-				<ContenidoSlide titulo="Producto: SolHub Platform">
-					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-						{[
-							{ icon: '👥', titulo: 'Gestión de Pacientes', desc: 'Registro, historial y seguimiento completo' },
-							{ icon: '📋', titulo: 'Gestión de Casos', desc: 'Seguimiento de estudios y resultados' },
-							{ icon: '💳', titulo: 'Gestión de Pagos', desc: 'Facturación, cobros y conversión de divisas' },
-							{ icon: '📊', titulo: 'Reportes y Analítica', desc: 'Indicadores en tiempo real y dashboards' },
-							{ icon: '🤖', titulo: 'Módulo IA (SolIA)', desc: 'Asistente para redacción de informes' },
-							{ icon: '⚙️', titulo: 'Configuración', desc: 'Personalización y ajustes del sistema' },
-						].map((modulo, index) => (
-							<Card key={index} className="hover:shadow-lg transition-shadow">
-								<CardHeader className="text-center">
-									<div className="text-4xl mb-2">{modulo.icon}</div>
-									<CardTitle className="text-lg">{modulo.titulo}</CardTitle>
-								</CardHeader>
-								<CardContent>
-									<p className="text-sm text-gray-600 text-center">{modulo.desc}</p>
-								</CardContent>
-							</Card>
-						))}
-					</div>
-
-					<div className="grid md:grid-cols-2 gap-6">
-						<Card className="bg-gradient-to-r from-green-100 to-blue-100 border-green-200">
-							<CardHeader className="text-center">
-								<CardTitle className="text-green-900">🎯 Caso de Éxito: Conspat</CardTitle>
-							</CardHeader>
-							<CardContent className="text-center">
-								<p className="text-green-700 mb-4">MVP validado en entorno real</p>
-								<p className="text-sm text-green-600">Resultados medibles y comprobables</p>
-							</CardContent>
-						</Card>
-
-						<Card className="bg-gradient-to-r from-purple-100 to-blue-100 border-purple-200">
-							<CardHeader className="text-center">
-								<CardTitle className="text-purple-900">🗳️ Votación de la Audiencia</CardTitle>
-							</CardHeader>
-							<CardContent className="text-center">
-								<p className="text-purple-700 mb-4">¿Qué módulo quieren ver en la demo?</p>
-								<p className="text-sm text-purple-600">La audiencia puede votar en tiempo real</p>
-							</CardContent>
-						</Card>
-					</div>
-				</ContenidoSlide>
-			</Slide>
-		),
-	},
-
 	// Slide 6: Arquitectura
 	{
 		id: 'arquitectura',
@@ -285,9 +255,9 @@ const slides = [
 							<div className="bg-green-50 p-4 rounded-lg">
 								<h3 className="font-semibold text-green-900 mb-2">🤖 Módulo IA (SolIA)</h3>
 								<ul className="text-sm text-green-700 space-y-1">
-									<li>• IA orquestada sin retención de datos</li>
+									<li>• IA sin retención de datos</li>
 									<li>• APIs de terceros con anonimización</li>
-									<li>• Entrenado con datos de Conspat</li>
+									<li>• Parametrizado con datos medicos privados</li>
 								</ul>
 							</div>
 
@@ -306,23 +276,27 @@ const slides = [
 								<h3 className="font-semibold text-orange-900 mb-2">🔒 Seguridad Avanzada</h3>
 								<ul className="text-sm text-orange-700 space-y-1">
 									<li>• Gestión multiusuario con control de permisos</li>
-									<li>• Limitación de accesos por número de usuarios</li>
+									<li>• Proteccion de examenes medicos a través de QR</li>
 									<li>• Cifrado y auditorías periódicas</li>
 								</ul>
 							</div>
 
 							<div className="bg-red-50 p-4 rounded-lg">
-								<h3 className="font-semibold text-red-900 mb-2">📋 Integración SENIAT</h3>
+								<h3 className="font-semibold text-red-900 mb-2">📋 Integración</h3>
 								<ul className="text-sm text-red-700 space-y-1">
-									<li>• Módulo de tasa e impuestos dinámico</li>
+									<li>• Generacion automatica de informes clinicos</li>
 									<li>• Configuración de tasas cambiarias ($, EUR, VES)</li>
-									<li>• Cálculo automático de impuestos</li>
+									<li>• Envio automatico de informes a los pacientes</li>
 								</ul>
 							</div>
 
-							<div className="bg-gray-100 p-4 rounded-lg text-center">
-								<div className="text-2xl font-bold text-gray-700">Supabase</div>
-								<div className="text-sm text-gray-600">Base de datos y autenticación</div>
+							<div className="bg-gray-100 p-4 rounded-lg">
+								<h3 className="font-semibold text-gray-900 mb-2">Base de datos</h3>
+								<ul className="text-sm text-gray-700 space-y-1">
+									<li>• Supabase</li>
+									<li>• Autenticacion de usuarios</li>
+									<li>• Limitación de accesos por roles</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -441,35 +415,45 @@ const slides = [
 							<div className="space-y-4">
 								{[
 									{
-										icon: '🎯',
+										icon: Palette,
 										titulo: 'Hiper Personalización',
 										desc: 'Se adapta a procesos del cliente, no al revés',
 									},
-									{ icon: '🇻🇪', titulo: 'Enfoque Venezuela', desc: 'Conocimiento profundo del mercado local y SENIAT' },
+									{ icon: ChartPie, titulo: 'Metricas', desc: 'Metricas personalizables en tiempo real' },
 									{
-										icon: '🏆',
+										icon: Trophy,
 										titulo: 'Validación Conspat',
 										desc: 'MVP validado en entorno real con resultados medibles',
 									},
 									{
-										icon: '🤖',
+										icon: Bot,
 										titulo: 'IA Local y Segura',
 										desc: 'Sin retención de datos, entrenada con casos reales',
 									},
 									{
-										icon: '⚡',
-										titulo: 'Implementación Rápida',
-										desc: 'Setup desde $1,000 vs competidores de alto costo',
+										icon: Smartphone,
+										titulo: 'Multiplataforma',
+										desc: 'Conectate desde cualquier dispositivo',
 									},
-								].map((ventaja, index) => (
-									<div key={index} className="flex items-start space-x-3 p-3 bg-gray-50 rounded-lg">
-										<div className="text-2xl">{ventaja.icon}</div>
-										<div>
-											<h4 className="font-semibold">{ventaja.titulo}</h4>
-											<p className="text-sm text-gray-600">{ventaja.desc}</p>
+									{
+										icon: Settings,
+										titulo: 'Automatizaciones',
+										desc: 'Generacion y envio automatico de informes clinicos',
+									},
+								].map((ventaja, index) => {
+									const IconComponent = ventaja.icon
+									return (
+										<div key={index} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+											<div className="text-blue-600">
+												<IconComponent size={24} />
+											</div>
+											<div>
+												<h4 className="font-semibold">{ventaja.titulo}</h4>
+												<p className="text-sm text-gray-600">{ventaja.desc}</p>
+											</div>
 										</div>
-									</div>
-								))}
+									)
+								})}
 							</div>
 						</div>
 
@@ -515,14 +499,6 @@ const slides = [
 										<p className="text-sm text-gray-600">Alto costo, sin adaptación local</p>
 									</CardContent>
 								</Card>
-							</div>
-
-							<div className="mt-6 p-4 bg-green-50 rounded-lg">
-								<h4 className="font-semibold text-green-900 mb-2">Nuestro Posicionamiento</h4>
-								<p className="text-sm text-green-700">
-									Únicos en Venezuela con cobertura integral, soporte local y módulo IA opcional. Mejor relación
-									costo-beneficio: ~$0.69 USD por caso procesado.
-								</p>
 							</div>
 						</div>
 					</div>
@@ -667,7 +643,7 @@ const slides = [
 				{ mes: 'Mar', usuarios: 12, casos: 280 },
 				{ mes: 'Abr', usuarios: 15, casos: 350 },
 				{ mes: 'May', usuarios: 18, casos: 420 },
-				{ mes: 'Jun', usuarios: 22, casos: 500 }
+				{ mes: 'Jun', usuarios: 22, casos: 500 },
 			]
 
 			return (
@@ -678,20 +654,12 @@ const slides = [
 								<h3 className="text-xl font-semibold mb-4">MVP Validado en Conspat</h3>
 								<div className="grid grid-cols-2 gap-4 mb-6">
 									<div className="text-center p-4 bg-green-50 rounded-lg">
-										<div className="text-3xl font-bold text-green-600">3</div>
-										<div className="text-sm text-green-700">Meses de piloto</div>
+										<div className="text-3xl font-bold text-green-600">18</div>
+										<div className="text-sm text-green-700">Meses de aliados</div>
 									</div>
 									<div className="text-center p-4 bg-blue-50 rounded-lg">
-										<div className="text-3xl font-bold text-blue-600">75%</div>
+										<div className="text-3xl font-bold text-blue-600">130-200 horas</div>
 										<div className="text-sm text-blue-700">Reducción tiempo tareas</div>
-									</div>
-									<div className="text-center p-4 bg-purple-50 rounded-lg">
-										<div className="text-3xl font-bold text-purple-600">100%</div>
-										<div className="text-sm text-purple-700">Satisfacción usuarios</div>
-									</div>
-									<div className="text-center p-4 bg-orange-50 rounded-lg">
-										<div className="text-3xl font-bold text-orange-600">0</div>
-										<div className="text-sm text-orange-700">Errores críticos</div>
 									</div>
 								</div>
 
@@ -729,20 +697,16 @@ const slides = [
 									<h3 className="text-xl font-semibold mb-4">Objetivos 12 Meses</h3>
 									<div className="space-y-2 text-sm">
 										<div className="flex justify-between">
-											<span>Clientes activos:</span>
-											<span className="font-medium">8</span>
-										</div>
-										<div className="flex justify-between">
 											<span>ARR (Annual Recurring Revenue):</span>
 											<span className="font-medium">$360K</span>
 										</div>
 										<div className="flex justify-between">
 											<span>Usuarios en plataforma:</span>
-											<span className="font-medium">200</span>
+											<span className="font-medium">10</span>
 										</div>
 										<div className="flex justify-between">
 											<span>Expansión geográfica:</span>
-											<span className="font-medium">Colombia</span>
+											<span className="font-medium">Regional</span>
 										</div>
 									</div>
 								</div>
@@ -764,14 +728,14 @@ const slides = [
 						<Card className="bg-blue-50 border-blue-200">
 							<CardHeader>
 								<CardTitle className="text-blue-900">Q1 2025</CardTitle>
-								<div className="text-sm text-blue-700">Consolidación Venezuela</div>
+								<div className="text-sm text-blue-700">Consolidación Regional</div>
 							</CardHeader>
 							<CardContent>
-								<ul className="text-sm space-y-1">
-									<li>• 3 clientes piloto cerrados</li>
-									<li>• Versión 2.0 con mejoras UX</li>
-									<li>• Módulo SENIAT completo</li>
-									<li>• Integración con sistemas existentes</li>
+								<ul className="text-sm space-y-1 list-disc">
+									<li>10 laboratorios satisfechos</li>
+									<li>Versión 2.0 con mejoras UX</li>
+									<li>Módulo de facturacion completo</li>
+									<li>Oficina en Caracas</li>
 								</ul>
 							</CardContent>
 						</Card>
@@ -782,41 +746,41 @@ const slides = [
 								<div className="text-sm text-green-700">Expansión Técnica</div>
 							</CardHeader>
 							<CardContent>
-								<ul className="text-sm space-y-1">
-									<li>• Módulo SolIA avanzado</li>
-									<li>• API para integraciones</li>
-									<li>• Dashboard analítico mejorado</li>
-									<li>• Sistema de respaldo automático</li>
+								<ul className="text-sm space-y-1 list-disc">
+									<li>Módulo SolIA avanzado</li>
+									<li>API para integraciones</li>
+									<li>Dashboard analítico mejorado</li>
+									<li>Infraestructura híbrida (local + cloud)</li>
 								</ul>
 							</CardContent>
 						</Card>
 
 						<Card className="bg-purple-50 border-purple-200">
 							<CardHeader>
-								<CardTitle className="text-purple-900">Q3 2025</CardTitle>
-								<div className="text-sm text-purple-700">Expansión Geográfica</div>
+								<CardTitle className="text-purple-900">Q3 2026</CardTitle>
+								<div className="text-sm text-purple-700">Expansión Venezuela</div>
 							</CardHeader>
 							<CardContent>
-								<ul className="text-sm space-y-1">
-									<li>• Entrada Colombia (2 clientes)</li>
-									<li>• Adaptación a regulaciones locales</li>
-									<li>• Partnership con Conspat Colombia</li>
-									<li>• Oficina virtual en Bogotá</li>
+								<ul className="text-sm space-y-1 list-disc">
+									<li>Entrada en toda Venezuela</li>
+									<li>Adaptación a regulaciones locales</li>
+									<li>Open Talks</li>
+									<li>Modulo financiero</li>
 								</ul>
 							</CardContent>
 						</Card>
 
 						<Card className="bg-orange-50 border-orange-200">
 							<CardHeader>
-								<CardTitle className="text-orange-900">Q4 2025</CardTitle>
+								<CardTitle className="text-orange-900">Q4 2026</CardTitle>
 								<div className="text-sm text-orange-700">Escalamiento</div>
 							</CardHeader>
 							<CardContent>
-								<ul className="text-sm space-y-1">
-									<li>• 8 clientes activos total</li>
-									<li>• Marketplace de plantillas</li>
-									<li>• Serie A ($500K objetivo)</li>
-									<li>• Equipo 8 personas</li>
+								<ul className="text-sm space-y-1 list-disc">
+									<li>Modulo de voz para SolIA</li>
+									<li>Reestructuracion de planes</li>
+									<li>Equipo 15 personas</li>
+									<li>Analisis de informes con IA</li>
 								</ul>
 							</CardContent>
 						</Card>
@@ -830,11 +794,11 @@ const slides = [
 							<CardContent>
 								<div className="grid md:grid-cols-4 gap-4 text-center">
 									<div>
-										<div className="text-2xl font-bold text-yellow-600">Chile + Perú</div>
+										<div className="text-2xl font-bold text-yellow-600">Colombia + Brasil</div>
 										<div className="text-sm text-yellow-700">Nuevos mercados</div>
 									</div>
 									<div>
-										<div className="text-2xl font-bold text-yellow-600">25</div>
+										<div className="text-2xl font-bold text-yellow-600">+50</div>
 										<div className="text-sm text-yellow-700">Clientes activos</div>
 									</div>
 									<div>
@@ -842,8 +806,8 @@ const slides = [
 										<div className="text-sm text-yellow-700">ARR objetivo</div>
 									</div>
 									<div>
-										<div className="text-2xl font-bold text-yellow-600">Serie B</div>
-										<div className="text-sm text-yellow-700">Preparación</div>
+										<div className="text-2xl font-bold text-yellow-600">Educacion Virtual</div>
+										<div className="text-sm text-yellow-700">Webinars</div>
 									</div>
 								</div>
 							</CardContent>
@@ -863,41 +827,41 @@ const slides = [
 					<div className="grid md:grid-cols-2 gap-6">
 						{[
 							{
-								riesgo: 'Regulaciones SENIAT',
-								descripcion: 'Cambios en tasas e impuestos venezolanos',
-								mitigacion: 'Módulo dinámico actualizable, asesoría contable especializada',
+								riesgo: 'Regulaciones Legales',
+								descripcion: 'Cambios de leyes e impuestos venezolanos',
+								mitigacion: 'Asesoría contable especializada',
 								color: 'red',
 							},
 							{
 								riesgo: 'Seguridad de Datos',
-								descripcion: 'Protección de información médica sensible',
+								descripcion: 'Fuga de información médica sensible',
 								mitigacion: 'Arquitectura híbrida local, cifrado end-to-end, auditorías',
 								color: 'orange',
 							},
 							{
 								riesgo: 'Adopción del Mercado',
 								descripcion: 'Resistencia al cambio en laboratorios tradicionales',
-								mitigacion: 'ROI demostrable, capacitación intensiva, soporte 24/7',
+								mitigacion: 'Demostracion gratuita y ROI demostrable',
 								color: 'yellow',
 							},
-							{
-								riesgo: 'Competencia Internacional',
-								descripcion: 'Entrada de soluciones extranjeras al mercado',
-								mitigacion: 'Especialización local, conocimiento del mercado venezolano',
-								color: 'blue',
-							},
+							// {
+							// 	riesgo: 'Competencia Internacional',
+							// 	descripcion: 'Entrada de soluciones extranjeras al mercado',
+							// 	mitigacion: 'Especialización local, conocimiento del mercado venezolano',
+							// 	color: 'blue',
+							// },
 							{
 								riesgo: 'Dependencia de Talento',
 								descripcion: 'Escasez de desarrolladores especializados en Venezuela',
 								mitigacion: 'Equipo remoto, capacitación interna, equity atractivo',
 								color: 'purple',
 							},
-							{
-								riesgo: 'Escalabilidad Económica',
-								descripcion: 'Costos de infraestructura vs ingresos en USD',
-								mitigacion: 'Modelo híbrido, optimización de recursos, precios competitivos',
-								color: 'green',
-							},
+							// {
+							// 	riesgo: 'Escalabilidad Económica',
+							// 	descripcion: 'Costos de infraestructura vs ingresos en USD',
+							// 	mitigacion: 'Modelo híbrido, optimización de recursos, precios competitivos',
+							// 	color: 'green',
+							// },
 						].map((item, index) => (
 							<Card key={index} className={`border-${item.color}-200 bg-${item.color}-50`}>
 								<CardHeader>
@@ -935,8 +899,8 @@ const slides = [
 										<div className="text-sm text-gray-600">Partnership estratégico</div>
 									</div>
 									<div>
-										<div className="text-xl font-bold text-gray-700">Pivots</div>
-										<div className="text-sm text-gray-600">Modelo B2B2C identificado</div>
+										<div className="text-xl font-bold text-gray-700">MVP</div>
+										<div className="text-sm text-gray-600">Respaldo en local y en la nube</div>
 									</div>
 								</div>
 							</CardContent>
@@ -957,32 +921,33 @@ const slides = [
 						<div className="space-y-6">
 							<Card className="bg-blue-50 border-blue-200">
 								<CardHeader>
-									<CardTitle className="text-blue-900 flex items-center">👨‍💼 CEO - Eugenio Andreone</CardTitle>
+									<CardTitle className="text-blue-900 flex items-center">👨‍💼 - Eugenio Andreone</CardTitle>
 								</CardHeader>
 								<CardContent>
 									<div className="text-sm text-blue-700 space-y-1">
 										<p>
-											<strong>8 años</strong> en desarrollo de software y gestión de proyectos
+											<strong>7 años</strong> en transformación digital y automatización
 										</p>
-										<p>Especialista en sistemas administrativos</p>
-										<p>Experiencia en transformación digital</p>
-										<p>Liderazgo en equipos técnicos</p>
+										<p>Experto en Make, n8n, Google Cloud y App Script</p>
+										<p>Desarrollo web y eCommerce (Shopify, Magento)</p>
+										<p>CRM, análisis de datos y optimización de procesos</p>
+										{/* <p>Enfoque en eficiencia, escalabilidad y resultados medibles</p> */}
 									</div>
 								</CardContent>
 							</Card>
 
 							<Card className="bg-green-50 border-green-200">
 								<CardHeader>
-									<CardTitle className="text-green-900 flex items-center">👨‍💻 CTO - Jesús Freites</CardTitle>
+									<CardTitle className="text-green-900 flex items-center">👨‍💻 - Jesús Freites</CardTitle>
 								</CardHeader>
 								<CardContent>
 									<div className="text-sm text-green-700 space-y-1">
 										<p>
-											<strong>6 años</strong> en desarrollo web y aplicaciones
+											<strong>4 años</strong> en desarrollo web
 										</p>
-										<p>Especialista en React, Next.js y TypeScript</p>
-										<p>Experiencia en arquitecturas escalables</p>
-										<p>Conocimiento en IA y machine learning</p>
+										<p>Desarrollo web con React, JavaScript y Tailwind</p>
+										<p>Manejo en Siebel, Oracle y SQL</p>
+										<p>Experiencia en hosting, integraciones y optimización de flujos</p>
 									</div>
 								</CardContent>
 							</Card>
@@ -992,7 +957,7 @@ const slides = [
 							<Card className="bg-purple-50 border-purple-200">
 								<CardHeader>
 									<CardTitle className="text-purple-900 flex items-center">
-										👨‍⚕️ Asesor Médico - Dr. [Conspat]
+										👨‍⚕️ Asesor Médico - Dra. Lorena Villareal
 									</CardTitle>
 								</CardHeader>
 								<CardContent>
@@ -1009,16 +974,16 @@ const slides = [
 
 							<Card className="bg-orange-50 border-orange-200">
 								<CardHeader>
-									<CardTitle className="text-orange-900 flex items-center">💼 Desarrollo de Negocio</CardTitle>
+									<CardTitle className="text-orange-900 flex items-center">
+										💼 Director Administrativo - Francisco Vivas
+									</CardTitle>
 								</CardHeader>
 								<CardContent>
 									<div className="text-sm text-orange-700 space-y-1">
-										<p>
-											<strong>Estrategia comercial</strong> y desarrollo de mercado
-										</p>
-										<p>Relaciones con laboratorios y clínicas</p>
-										<p>Validación de producto en campo</p>
-										<p>Pipeline de clientes potenciales</p>
+										<p>Supervisión administrativa y coordinación contable</p>
+										<p>Revisión legal y fortalecimiento institucional</p>
+										<p>Gestión financiera con visión estratégica</p>
+										<p>Impulso de la integración entre el ámbito clínico y empresarial</p>
 									</div>
 								</CardContent>
 							</Card>
@@ -1037,12 +1002,12 @@ const slides = [
 										<div className="text-sm text-gray-600">Validación médica y acceso al mercado</div>
 									</div>
 									<div>
-										<div className="font-bold text-gray-700">Laboratorios Piloto</div>
-										<div className="text-sm text-gray-600">Casos de uso reales y feedback</div>
+										<div className="font-bold text-gray-700">Visitas a Laboratorios</div>
+										<div className="text-sm text-gray-600">Demostracion y feedback en vivo</div>
 									</div>
 									<div>
-										<div className="font-bold text-gray-700">Desarrolladores</div>
-										<div className="text-sm text-gray-600">Equipo técnico especializado</div>
+										<div className="font-bold text-gray-700">Docuware</div>
+										<div className="text-sm text-gray-600">Software de Gestión Documental</div>
 									</div>
 								</div>
 							</CardContent>
@@ -1092,33 +1057,31 @@ const slides = [
 
 					<div className="mt-12">
 						<h3 className="text-2xl font-semibold mb-4">📅 Próximos Pasos</h3>
-						<div className="grid md:grid-cols-5 gap-4 max-w-5xl mx-auto text-sm">
-							<div className="bg-white/10 p-4 rounded-lg">
+						<div className="grid md:grid-cols-4 gap-4 max-w-5xl mx-auto text-sm">
+							{/* <div className="bg-white/10 p-4 rounded-lg">
 								<div className="font-semibold">1. Demo</div>
 								<div className="text-white/80">Producto en vivo</div>
-							</div>
+							</div> */}
 							<div className="bg-white/10 p-4 rounded-lg">
-								<div className="font-semibold">2. Validación</div>
+								<div className="font-semibold">1. Validación</div>
 								<div className="text-white/80">Casos de uso reales</div>
 							</div>
 							<div className="bg-white/10 p-4 rounded-lg">
-								<div className="font-semibold">3. Referencias</div>
+								<div className="font-semibold">2. Referencias</div>
 								<div className="text-white/80">Conspat y clientes</div>
 							</div>
 							<div className="bg-white/10 p-4 rounded-lg">
-								<div className="font-semibold">4. Términos</div>
+								<div className="font-semibold">3. Términos</div>
 								<div className="text-white/80">Inversión detallados</div>
 							</div>
 							<div className="bg-white/10 p-4 rounded-lg">
-								<div className="font-semibold">5. Cierre</div>
+								<div className="font-semibold">4. Cierre</div>
 								<div className="text-white/80">Partnership estratégico</div>
 							</div>
 						</div>
 					</div>
 
-					<div className="mt-12 text-xl italic">
-						Juntos podemos modernizar la gestión de laboratorios en Venezuela
-					</div>
+					<div className="mt-12 text-xl italic">Juntos podemos modernizar la gestión de laboratorios en Venezuela</div>
 
 					<Card className="bg-white/10 backdrop-blur border-white/20 max-w-2xl mx-auto">
 						<CardHeader>
@@ -1136,45 +1099,43 @@ const slides = [
 ]
 
 export default function SlidesPage() {
-  const [slideActual, setSlideActual] = useState(0)
-  const [mostrarInteractividad, setMostrarInteractividad] = useState(false)
-  const [codigoSesion] = useState(() => generarCodigoSesion())
+	const [slideActual, setSlideActual] = useState(0)
+	const [mostrarInteractividad, setMostrarInteractividad] = useState(false)
+	const [codigoSesion] = useState(() => generarCodigoSesion())
 
-  const totalSlides = slides.length
+	const totalSlides = slides.length
 
-  const cambiarSlide = (nuevoSlide: number) => {
-    if (nuevoSlide >= 0 && nuevoSlide < totalSlides) {
-      setSlideActual(nuevoSlide)
-    }
-  }
+	const cambiarSlide = (nuevoSlide: number) => {
+		if (nuevoSlide >= 0 && nuevoSlide < totalSlides) {
+			setSlideActual(nuevoSlide)
+		}
+	}
 
-  const toggleInteractividad = () => {
-    setMostrarInteractividad(!mostrarInteractividad)
-  }
+	const toggleInteractividad = () => {
+		setMostrarInteractividad(!mostrarInteractividad)
+	}
 
-  return (
-    <div className="min-h-screen bg-background">
-      <DeckControls
-        slideActual={slideActual}
-        totalSlides={totalSlides}
-        onCambiarSlide={cambiarSlide}
-        onToggleInteractividad={toggleInteractividad}
-        participantes={0}
-      />
+	return (
+		<div className="min-h-screen bg-background">
+			<DeckControls
+				slideActual={slideActual}
+				totalSlides={totalSlides}
+				onCambiarSlide={cambiarSlide}
+				onToggleInteractividad={toggleInteractividad}
+				participantes={0}
+			/>
 
-      <div className="pt-16">
-        <AnimatePresence mode="wait">
-          <motion.div key={slideActual}>
-            {slides[slideActual].component()}
-          </motion.div>
-        </AnimatePresence>
-      </div>
+			<div className="pt-16">
+				<AnimatePresence mode="wait">
+					<motion.div key={slideActual}>{slides[slideActual].component()}</motion.div>
+				</AnimatePresence>
+			</div>
 
-      <PanelInteractividad
-        codigoSesion={codigoSesion}
-        visible={mostrarInteractividad}
-        onCerrar={() => setMostrarInteractividad(false)}
-      />
-    </div>
-  )
+			<PanelInteractividad
+				codigoSesion={codigoSesion}
+				visible={mostrarInteractividad}
+				onCerrar={() => setMostrarInteractividad(false)}
+			/>
+		</div>
+	)
 }
