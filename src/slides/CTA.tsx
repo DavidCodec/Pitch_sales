@@ -1,4 +1,3 @@
-import { Slide, ContenidoSlide } from '@src/components/Slide'
 import { Card, CardHeader, CardTitle, CardContent } from '@src/components/ui/card'
 
 export function CTA() {

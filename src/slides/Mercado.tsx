@@ -8,7 +8,6 @@ export function Mercado() {
 		{ nombre: 'Centros Diagnóstico', valor: 141, color: '#9333ea' },
 		{ nombre: 'Clínicas Generales', valor: 1200, color: '#3b82f6' },
 	]
-	const COLORS = ['#db2777', '#9333ea', '#3b82f6']
 	return (
 		<Slide>
 			<ContenidoSlide titulo="Mercado y Oportunidad">
@@ -64,7 +63,7 @@ export function Mercado() {
 									dataKey="valor"
 								>
 									{datosMercado.map((entry, index) => (
-										<Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+										<Cell key={`cell-${index}`} fill={entry.color[index % entry.color.length]} />
 									))}
 								</Pie>
 								<Tooltip formatter={(value) => [`${value}`, 'Cantidad']} />
