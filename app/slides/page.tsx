@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { DeckControls } from '@/components/DeckControls'
 import { PanelInteractividad } from '@/components/PanelInteractividad'
 import { Slide, TituloSlide, ContenidoSlide, ListaSlide } from '@/components/Slide'
+import { Timer } from '@/components/Timer'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
 import { generarCodigoSesion } from '@/lib/utils'
-import { generarDatosGrafico } from '@/lib/ai'
 import {
 	Palette,
 	ChartPie,
@@ -22,22 +22,34 @@ import {
 	Clock,
 	PieChart as PieChartIcon,
 	Smartphone,
+	CodeXml,
 } from 'lucide-react'
+
+import Particles from '@/components/ui/Particles'
 
 const slides = [
 	// Slide 1: Portada
 	{
 		id: 'portada',
 		component: () => (
-			<Slide variante="titulo" fondo="from-blue-600 to-purple-700">
-				<TituloSlide subtitulo="Sistema Administrativo Web para Laboratorios y Clínicas" className="text-white">
-					Solware
-				</TituloSlide>
-				<div className="mt-8 text-white/90 text-xl">
-					Centralizando gestión de pacientes, casos, pagos y reportes en una sola plataforma
+			<div className="bg-gradient-to-br from-indigo-900/90 to-purple-900/90 w-screen h-screen">
+				<Particles />
+				<div className="flex flex-col items-center translate-y-[140%]">
+					<div>
+						<h1 className="text-blue-100 text-center font-bold text-6xl font-sans flex items-center justify-center gap-2">
+							{' '}
+							<CodeXml className="w-20 h-20 stroke-2" /> Solware
+						</h1>
+					</div>
+					<p className="text-white/90 text-center text-xl font-semibold">
+						Sistema Administrativo Web para Laboratorios y Clínicas
+					</p>
+					<div className="text-white/90 text-xl font-semibold">
+						Centralizando gestión de pacientes, casos, pagos y reportes en una sola plataforma
+					</div>
+					<div className="mt-8 text-white/70 text-lg italic">Eugenio Andreone y Jesús Freites - Caracas, 2025</div>
 				</div>
-				<div className="mt-12 text-white/70 text-lg italic">Eugenio Andreone y Jesús Freites - Caracas, 2025</div>
-			</Slide>
+			</div>
 		),
 	},
 
@@ -47,18 +59,22 @@ const slides = [
 		component: () => (
 			<Slide>
 				<ContenidoSlide titulo="Resumen Ejecutivo">
-					<div className="text-lg space-y-4">
-						<h3 className="text-2xl font-semibold text-primary mb-4">¿Qué hacemos y por qué ahora?</h3>
-						<ListaSlide
-							items={[
-								'Solware desarrolla SolHub: sistema administrativo web para laboratorios y clínicas',
-								'Centraliza gestión de pacientes, casos, pagos, reportes y analítica en una plataforma',
-								'Reducción del 75% en tiempo de tareas administrativas (2 min → 30 seg)',
-								'MVP validado en Laboratorios Conspat con resultados reales',
-								'Mercado objetivo: 1.700+ laboratorios y clínicas en Venezuela',
-								'Diferencial: hiper personalización + módulo IA opcional (SolIA) con datos locales',
-							]}
-						/>
+					<div className="flex flex-col space-y-2 h-full">
+						<h3 className="text-sm sm:text-base md:text-lg font-semibold text-primary flex-shrink-0">
+							¿Qué hacemos y por qué ahora?
+						</h3>
+						<div className="flex-1 overflow-hidden">
+							<ListaSlide
+								items={[
+									'Solware desarrolla SolHub: sistema administrativo web para laboratorios y clínicas',
+									'Centraliza gestión de pacientes, casos, pagos, reportes y analítica en una plataforma',
+									'Reducción del 75% en tiempo de tareas administrativas (2 min → 30 seg)',
+									'MVP validado en Laboratorios Conspat con resultados reales',
+									'Mercado objetivo: 1.700+ laboratorios y clínicas en Venezuela',
+									'Diferencial: hiper personalización + módulo IA opcional (SolIA) con datos locales',
+								]}
+							/>
+						</div>
 					</div>
 				</ContenidoSlide>
 			</Slide>
@@ -71,71 +87,75 @@ const slides = [
 		component: () => (
 			<Slide>
 				<ContenidoSlide titulo="Situación Actual: Laboratorios en Venezuela">
-					<div className="grid md:grid-cols-3 gap-8">
-						<Card className="border-red-200 bg-red-50">
-							<CardHeader>
-								<CardTitle className="flex items-center text-red-700">
-									<BarChart3 className="mr-2" size={20} />
-									Sistemas Obsoletos
-								</CardTitle>
-							</CardHeader>
-							<CardContent>
-								<div className="space-y-2">
-									<div className="text-2xl font-bold text-red-600">1.700+</div>
-									<div className="text-sm">laboratorios en el país</div>
-									<div className="text-2xl font-bold text-red-600">Excel/Manual</div>
-									<div className="text-sm">Baja proteccion de datos</div>
-								</div>
-							</CardContent>
-						</Card>
+					<div className="flex flex-col space-y-2 sm:space-y-3 h-full">
+						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 flex-shrink-0">
+							<Card className="border-red-200 bg-red-50 col-span-1">
+								<CardHeader className="pb-2">
+									<CardTitle className="flex items-center text-red-700 text-md">
+										<BarChart3 className="mr-2" size={14} />
+										Sistemas Obsoletos
+									</CardTitle>
+								</CardHeader>
+								<CardContent className="pt-0">
+									<div className="space-y-1">
+										<div className="text-base sm:text-lg font-bold text-red-600">1.700+</div>
+										<div className="text-xs">laboratorios en el país</div>
+										<div className="text-base sm:text-lg font-bold text-red-600">Excel/Manual</div>
+										<div className="text-xs">Baja proteccion de datos</div>
+									</div>
+								</CardContent>
+							</Card>
 
-						<Card className="border-orange-200 bg-orange-50">
-							<CardHeader>
-								<CardTitle className="flex items-center text-orange-700">
-									<Clock className="mr-2" size={20} />
-									Demoras Críticas
-								</CardTitle>
-							</CardHeader>
-							<CardContent>
-								<div className="space-y-2">
-									<div className="text-2xl font-bold text-orange-600">12-15 min</div>
-									<div className="text-sm">tiempo manual por caso</div>
-									<div className="text-2xl font-bold text-orange-600">4-6 min</div>
-									<div className="text-sm">tiempo con SolHub</div>
-								</div>
-							</CardContent>
-						</Card>
+							<Card className="border-orange-200 bg-orange-50 col-span-1">
+								<CardHeader className="pb-2">
+									<CardTitle className="flex items-center text-orange-700 text-md">
+										<Clock className="mr-2" size={14} />
+										Demoras Críticas
+									</CardTitle>
+								</CardHeader>
+								<CardContent className="pt-0">
+									<div className="space-y-1">
+										<div className="text-base sm:text-lg font-bold text-orange-600">12-15 min</div>
+										<div className="text-xs">tiempo manual por caso</div>
+										<div className="text-base sm:text-lg font-bold text-orange-600">4-6 min</div>
+										<div className="text-xs">tiempo con SolHub</div>
+									</div>
+								</CardContent>
+							</Card>
 
-						<Card className="border-yellow-200 bg-yellow-50">
-							<CardHeader>
-								<CardTitle className="flex items-center text-yellow-700">
-									<TrendingUp className="mr-2" size={20} />
-									Sin Indicadores
-								</CardTitle>
-							</CardHeader>
-							<CardContent>
-								<div className="space-y-2">
-									<div className="text-2xl font-bold text-yellow-600">0%</div>
-									<div className="text-sm">indicadores en tiempo real</div>
-									<div className="text-2xl font-bold text-yellow-600">Duplicación</div>
-									<div className="text-sm">de tareas administrativas</div>
-								</div>
-							</CardContent>
-						</Card>
-					</div>
+							<Card className="border-yellow-200 bg-yellow-50 col-span-1">
+								<CardHeader className="pb-2">
+									<CardTitle className="flex items-center text-yellow-700 text-md">
+										<TrendingUp className="mr-2" size={14} />
+										Sin Indicadores
+									</CardTitle>
+								</CardHeader>
+								<CardContent className="pt-0">
+									<div className="space-y-1">
+										<div className="text-base sm:text-lg font-bold text-yellow-600">0%</div>
+										<div className="text-xs">indicadores en tiempo real</div>
+										<div className="text-base sm:text-lg font-bold text-yellow-600">Duplicación</div>
+										<div className="text-xs">de tareas administrativas</div>
+									</div>
+								</CardContent>
+							</Card>
+						</div>
 
-					<div className="mt-8 p-6 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg border border-red-200">
-						<h3 className="text-xl font-semibold text-red-900 mb-4">Problemas Identificados en 30+ Visitas de Campo</h3>
-						<div className="grid md:grid-cols-2 gap-4 text-sm">
-							<div>
-								<p className="font-medium text-red-800">• Demoras en entrega de informes clínicos</p>
-								<p className="font-medium text-red-800">• Duplicación de registros y tareas</p>
-								<p className="font-medium text-red-800">• Ausencia de integración entre áreas</p>
-							</div>
-							<div>
-								<p className="font-medium text-red-800">• Limitada capacidad de análisis</p>
-								<p className="font-medium text-red-800">• Poca adaptabilidad a realidad local</p>
-								<p className="font-medium text-red-800">• Falta de cumplimiento SENIAT</p>
+						<div className="p-2 sm:p-3 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg border border-red-200 overflow-hidden col-span-3">
+							<h3 className="text-md font-semibold text-red-900 mb-1 sm:mb-2">
+								Problemas Identificados en 30+ Visitas de Campo
+							</h3>
+							<div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+								<div>
+									<p className="font-medium text-red-800">• Demoras en entrega de informes clínicos</p>
+									<p className="font-medium text-red-800">• Duplicación de registros y tareas</p>
+									<p className="font-medium text-red-800">• Ausencia de integración entre áreas</p>
+								</div>
+								<div>
+									<p className="font-medium text-red-800">• Limitada capacidad de análisis</p>
+									<p className="font-medium text-red-800">• Poca adaptabilidad a realidad local</p>
+									<p className="font-medium text-red-800">• Falta de cumplimiento SENIAT</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -150,80 +170,94 @@ const slides = [
 		component: () => (
 			<Slide>
 				<ContenidoSlide titulo="Nuestra Solución: SolHub + SolIA">
-					<div className="grid md:grid-cols-2 gap-8">
-						<div className="space-y-6">
-							<div className="flex items-start space-x-4">
-								<div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-									<Zap className="text-blue-600" size={24} />
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
+						<div className="space-y-2 sm:space-y-3 md:space-y-4 overflow-hidden">
+							<div className="flex items-start space-x-3 sm:space-x-4">
+								<div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+									<Zap className="text-blue-600" size={20} />
 								</div>
 								<div>
-									<h3 className="text-xl font-semibold mb-2">Automatización de Procesos</h3>
-									<p className="text-gray-600">
+									<h3 className="text-lg sm:text-xl font-semibold mb-2">Automatización de Procesos</h3>
+									<p className="text-sm sm:text-base text-gray-600">
 										Registro de pacientes, generación de reportes, cálculos automáticos y conversión de divisas
 									</p>
 								</div>
 							</div>
 
-							<div className="flex items-start space-x-4">
-								<div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-									<span className="text-green-600 font-bold">📊</span>
+							<div className="flex items-start space-x-3 sm:space-x-4">
+								<div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+									<span className="text-green-600 font-bold text-lg sm:text-xl">📊</span>
 								</div>
 								<div>
-									<h3 className="text-xl font-semibold mb-2">Indicadores en Tiempo Real</h3>
-									<p className="text-gray-600">
+									<h3 className="text-lg sm:text-xl font-semibold mb-2">Indicadores en Tiempo Real</h3>
+									<p className="text-sm sm:text-base text-gray-600">
 										Métricas personalizables, productividad, casos pendientes y estudios más solicitados
 									</p>
 								</div>
 							</div>
 
-							<div className="flex items-start space-x-4">
-								<div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-									<span className="text-purple-600 font-bold">🎯</span>
+							<div className="flex items-start space-x-3 sm:space-x-4">
+								<div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+									<span className="text-purple-600 font-bold text-lg sm:text-xl">🎯</span>
 								</div>
 								<div>
-									<h3 className="text-xl font-semibold mb-2">Hiper Personalización</h3>
-									<p className="text-gray-600">Se adapta a los procesos del cliente y no al revés</p>
+									<h3 className="text-lg sm:text-xl font-semibold mb-2">Hiper Personalización</h3>
+									<p className="text-sm sm:text-base text-gray-600">
+										Se adapta a los procesos del cliente y no al revés
+									</p>
 								</div>
 							</div>
 
-							<div className="flex items-start space-x-4">
-								<div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
-									<span className="text-orange-600 font-bold">🤖</span>
+							<div className="flex items-start space-x-3 sm:space-x-4">
+								<div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+									<span className="text-orange-600 font-bold text-lg sm:text-xl">🤖</span>
 								</div>
 								<div>
-									<h3 className="text-xl font-semibold mb-2">Módulo IA (SolIA)</h3>
-									<p className="text-gray-600">
+									<h3 className="text-lg sm:text-xl font-semibold mb-2">Módulo IA (SolIA)</h3>
+									<p className="text-sm sm:text-base text-gray-600">
 										Entrenado con datos validados por Conspat, apoya redacción de informes bajo supervisión médica
 									</p>
 								</div>
 							</div>
 						</div>
 
-						<div className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-lg">
-							<h3 className="text-xl font-semibold mb-4">Innovaciones Clave</h3>
-							<ul className="space-y-2 text-sm">
+						<div className="bg-gradient-to-br from-blue-50 to-purple-50 p-3 sm:p-4 rounded-lg overflow-hidden">
+							<h3 className="text-xl font-semibold mb-2 sm:mb-3">Innovaciones Clave</h3>
+							<ul className="space-y-1 sm:space-y-2 text-sm">
 								<li className="flex items-center space-x-2">
-									<Badge variant="outline">✓</Badge>
+									<Badge variant="outline" className="text-xs">
+										✓
+									</Badge>
 									<span>Plantillas estandarizadas como propiedad intelectual</span>
 								</li>
 								<li className="flex items-center space-x-2">
-									<Badge variant="outline">✓</Badge>
+									<Badge variant="outline" className="text-xs">
+										✓
+									</Badge>
 									<span>Módulo de tasa e impuestos (SENIAT)</span>
 								</li>
 								<li className="flex items-center space-x-2">
-									<Badge variant="outline">✓</Badge>
+									<Badge variant="outline" className="text-xs">
+										✓
+									</Badge>
 									<span>Arquitectura híbrida (local + cloud)</span>
 								</li>
 								<li className="flex items-center space-x-2">
-									<Badge variant="outline">✓</Badge>
+									<Badge variant="outline" className="text-xs">
+										✓
+									</Badge>
 									<span>IA segura y local sin retención de datos</span>
 								</li>
 								<li className="flex items-center space-x-2">
-									<Badge variant="outline">✓</Badge>
+									<Badge variant="outline" className="text-xs">
+										✓
+									</Badge>
 									<span>Migración de datos desde sistemas existentes</span>
 								</li>
 								<li className="flex items-center space-x-2">
-									<Badge variant="outline">✓</Badge>
+									<Badge variant="outline" className="text-xs">
+										✓
+									</Badge>
 									<span>Seguridad avanzada con control de permisos</span>
 								</li>
 							</ul>
@@ -310,11 +344,11 @@ const slides = [
 		id: 'mercado',
 		component: () => {
 			const datosMercado = [
-				{ nombre: 'Laboratorios Patológicos', valor: 39, color: '#8884d8' },
-				{ nombre: 'Centros Diagnóstico', valor: 141, color: '#82ca9d' },
-				{ nombre: 'Clínicas Generales', valor: 1200, color: '#ffc658' },
+				{ nombre: 'Laboratorios Patológicos', valor: 39, color: '#db2777' },
+				{ nombre: 'Centros Diagnóstico', valor: 141, color: '#9333ea' },
+				{ nombre: 'Clínicas Generales', valor: 1200, color: '#3b82f6' },
 			]
-			const COLORS = ['#8884d8', '#82ca9d', '#ffc658']
+			const COLORS = ['#db2777', '#9333ea', '#3b82f6']
 
 			return (
 				<Slide>
@@ -323,23 +357,23 @@ const slides = [
 							<div>
 								<h3 className="text-xl font-semibold mb-4">Mercado Venezolano (Data Scraper)</h3>
 								<div className="space-y-4">
+									<div className="flex items-center justify-between p-3 bg-pink-50 rounded">
+										<span className="font-medium text-pink-600">Laboratorios Patológicos</span>
+										<span className="text-xl font-bold text-pink-600">≈39</span>
+									</div>
+									<div className="flex items-center justify-between p-3 bg-purple-50 rounded">
+										<span className="font-medium text-purple-600">Centros Diagnóstico</span>
+										<span className="text-xl font-bold text-purple-600">≈141</span>
+									</div>
 									<div className="flex items-center justify-between p-3 bg-blue-50 rounded">
-										<span className="font-medium">Laboratorios Patológicos</span>
-										<span className="text-xl font-bold text-blue-600">≈39</span>
-									</div>
-									<div className="flex items-center justify-between p-3 bg-green-50 rounded">
-										<span className="font-medium">Centros Diagnóstico</span>
-										<span className="text-xl font-bold text-green-600">≈141</span>
-									</div>
-									<div className="flex items-center justify-between p-3 bg-yellow-50 rounded">
-										<span className="font-medium">Clínicas Generales</span>
-										<span className="text-xl font-bold text-yellow-600">≈1.200</span>
+										<span className="font-medium text-blue-600">Clínicas Generales</span>
+										<span className="text-xl font-bold text-blue-600">≈1.200</span>
 									</div>
 								</div>
 
 								<div className="mt-6 p-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg">
 									<h4 className="font-semibold text-purple-900 mb-2">Mercado LATAM Salud Digital</h4>
-									<div className="space-y-2 text-sm">
+									<div className="space-y-1 text-sm">
 										<div className="flex justify-between">
 											<span>2024:</span>
 											<span className="font-medium">$17,036.5M</span>
@@ -380,7 +414,7 @@ const slides = [
 							</div>
 						</div>
 
-						<div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-green-200">
+						<div className="mt-4 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-green-200">
 							<h3 className="text-xl font-semibold text-green-900 mb-4">Estrategia de Segmentación</h3>
 							<div className="grid md:grid-cols-3 gap-4 text-sm">
 								<div>
@@ -611,7 +645,7 @@ const slides = [
 						</div>
 					</div>
 
-					<div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-green-200">
+					{/* <div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-green-200">
 						<h3 className="text-xl font-semibold text-green-900 mb-4">Propuesta de Valor</h3>
 						<div className="grid md:grid-cols-3 gap-4 text-sm">
 							<div>
@@ -627,7 +661,7 @@ const slides = [
 								<p className="text-green-700">Suscripción mensual con actualizaciones continuas</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</ContenidoSlide>
 			</Slide>
 		),
@@ -830,19 +864,25 @@ const slides = [
 								riesgo: 'Regulaciones Legales',
 								descripcion: 'Cambios de leyes e impuestos venezolanos',
 								mitigacion: 'Asesoría contable especializada',
-								color: 'red',
+								color: 'pink',
+								bg: 'bg-pink-600/10',
+								border: 'border-pink-300',
 							},
 							{
 								riesgo: 'Seguridad de Datos',
 								descripcion: 'Fuga de información médica sensible',
 								mitigacion: 'Arquitectura híbrida local, cifrado end-to-end, auditorías',
-								color: 'orange',
+								color: 'purple',
+								bg: 'bg-purple-600/10',
+								border: 'border-purple-300',
 							},
 							{
 								riesgo: 'Adopción del Mercado',
 								descripcion: 'Resistencia al cambio en laboratorios tradicionales',
 								mitigacion: 'Demostracion gratuita y ROI demostrable',
-								color: 'yellow',
+								color: 'blue',
+								bg: 'bg-blue-600/10',
+								border: 'border-blue-300',
 							},
 							// {
 							// 	riesgo: 'Competencia Internacional',
@@ -854,7 +894,9 @@ const slides = [
 								riesgo: 'Dependencia de Talento',
 								descripcion: 'Escasez de desarrolladores especializados en Venezuela',
 								mitigacion: 'Equipo remoto, capacitación interna, equity atractivo',
-								color: 'purple',
+								color: 'green',
+								bg: 'bg-green-600/10',
+								border: 'border-green-300',
 							},
 							// {
 							// 	riesgo: 'Escalabilidad Económica',
@@ -863,23 +905,21 @@ const slides = [
 							// 	color: 'green',
 							// },
 						].map((item, index) => (
-							<Card key={index} className={`border-${item.color}-200 bg-${item.color}-50`}>
-								<CardHeader>
-									<CardTitle className={`text-${item.color}-900 text-lg`}>⚖️ {item.riesgo}</CardTitle>
-								</CardHeader>
-								<CardContent>
-									<div className="space-y-3">
-										<div>
-											<span className="font-medium text-sm">Riesgo:</span>
-											<p className={`text-sm text-${item.color}-700`}>{item.descripcion}</p>
-										</div>
-										<div>
-											<span className="font-medium text-sm">Mitigación:</span>
-											<p className={`text-sm text-${item.color}-700`}>{item.mitigacion}</p>
-										</div>
+							<div key={index} className={`border ${item.border} ${item.bg} p-4 rounded-lg`}>
+								<div>
+									<h3 className={`text-black text-lg font-bold mb-2`}>⚖️ {item.riesgo}</h3>
+								</div>
+								<div className="flex flex-col gap-2">
+									<div>
+										<span className="font-medium text-sm">Riesgo:</span>
+										<p className={`text-sm text-${item.color}-700`}>{item.descripcion}</p>
 									</div>
-								</CardContent>
-							</Card>
+									<div>
+										<span className="font-medium text-sm">Mitigación:</span>
+										<p className={`text-sm text-${item.color}-700`}>{item.mitigacion}</p>
+									</div>
+								</div>
+							</div>
 						))}
 					</div>
 
@@ -1022,9 +1062,9 @@ const slides = [
 	{
 		id: 'cta',
 		component: () => (
-			<Slide variante="titulo" fondo="from-purple-600 to-blue-700">
+			<div className="bg-gradient-to-br from-indigo-900/90 to-purple-900/90 w-screen h-screen flex flex-col items-center justify-center">
 				<div className="text-center text-white space-y-8">
-					<TituloSlide className="text-white">¡Únete a Solware!</TituloSlide>
+					<h1 className="text-white font-sans text-6xl font-bold">¡Únete a Solware!</h1>
 
 					<p className="text-2xl text-white/90 max-w-4xl mx-auto">
 						Transformemos la gestión administrativa de laboratorios en Venezuela
@@ -1082,18 +1122,8 @@ const slides = [
 					</div>
 
 					<div className="mt-12 text-xl italic">Juntos podemos modernizar la gestión de laboratorios en Venezuela</div>
-
-					<Card className="bg-white/10 backdrop-blur border-white/20 max-w-2xl mx-auto">
-						<CardHeader>
-							<CardTitle className="text-white">🗳️ Pregunta Final para la Audiencia</CardTitle>
-						</CardHeader>
-						<CardContent className="text-white/90">
-							<p className="text-lg">¿Qué módulo de SolHub les interesa más ver en demo?</p>
-							<p className="text-sm mt-2">La audiencia puede votar en tiempo real</p>
-						</CardContent>
-					</Card>
 				</div>
-			</Slide>
+			</div>
 		),
 	},
 ]
@@ -1116,7 +1146,7 @@ export default function SlidesPage() {
 	}
 
 	return (
-		<div className="min-h-screen bg-background">
+		<div className="h-screen w-screen overflow-hidden">
 			<DeckControls
 				slideActual={slideActual}
 				totalSlides={totalSlides}
@@ -1125,9 +1155,11 @@ export default function SlidesPage() {
 				participantes={0}
 			/>
 
-			<div className="pt-16">
+			<div className="h-full w-full overflow-hidden">
 				<AnimatePresence mode="wait">
-					<motion.div key={slideActual}>{slides[slideActual].component()}</motion.div>
+					<motion.div key={slideActual} className="h-full w-full">
+						{slides[slideActual].component()}
+					</motion.div>
 				</AnimatePresence>
 			</div>
 
@@ -1135,6 +1167,15 @@ export default function SlidesPage() {
 				codigoSesion={codigoSesion}
 				visible={mostrarInteractividad}
 				onCerrar={() => setMostrarInteractividad(false)}
+			/>
+
+			{/* Timer en esquina inferior derecha */}
+			<Timer 
+				defaultDuration={15 * 60} // 15 minutos por defecto
+				onTimeUp={() => {
+					// Opcional: mostrar notificación cuando se agote el tiempo
+					console.log('Tiempo del pitch agotado')
+				}}
 			/>
 		</div>
 	)
