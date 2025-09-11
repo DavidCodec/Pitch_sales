@@ -79,4 +79,99 @@
   body {
     @apply bg-background text-foreground;
   }
+  html, body {
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  /* Sistema de escalado automático para presentaciones */
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Ajustes responsive sin scroll */
+  @media (max-width: 640px) {
+    .slide-content {
+      padding: 0.5rem;
+    }
+  }
+  
+  @media (min-width: 641px) and (max-width: 768px) {
+    .slide-content {
+      padding: 1rem;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .slide-content {
+      padding: 1.5rem;
+    }
+  }
+}
+
+
+@layer utilities {
+  /* Animaciones de partículas */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.5;
+    }
+    50% {
+      transform: translateY(-20px) translateX(10px);
+      opacity: 0.8;
+    }
+    75% {
+      opacity: 0.5;
+    }
+  }
+
+  .animate-float {
+    animation: float linear infinite;
+  }
+
+  /* Newton's Pendulum Animation */
+  @keyframes pendulum1 {
+    0% { transform: translateY(0px); }
+    16.6% { transform: translateY(80px); }
+    33.3% { transform: translateY(80px); }
+    50% { transform: translateY(0px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  @keyframes pendulum2 {
+    0% { transform: translateY(0px); }
+    16.6% { transform: translateY(0px); }
+    33.3% { transform: translateY(80px); }
+    50% { transform: translateY(80px); }
+    66.6% { transform: translateY(0px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  @keyframes pendulum3 {
+    0% { transform: translateY(0px); }
+    33.3% { transform: translateY(0px); }
+    50% { transform: translateY(0px); }
+    66.6% { transform: translateY(80px); }
+    83.3% { transform: translateY(80px); }
+    100% { transform: translateY(0px); }
+  }
+
+  .pendulum-1 {
+    animation: pendulum1 6s ease-in-out infinite;
+  }
+
+  .pendulum-2 {
+    animation: pendulum2 6s ease-in-out infinite;
+  }
+
+  .pendulum-3 {
+    animation: pendulum3 6s ease-in-out infinite;
+  }
 }
