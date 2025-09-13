@@ -16,7 +16,7 @@ export function Traccion() {
 			<ContenidoSlide titulo="Tracción y Validación">
 				<div className="grid md:grid-cols-2 gap-8">
 					<div>
-						<h3 className="text-xl font-semibold mb-4">MVP Validado en Conspat</h3>
+						<h3 className="text-xl font-semibold mb-4">MVP - Solhub</h3>
 						<div className="grid grid-cols-2 gap-4 mb-6">
 							<div className="text-center p-4 bg-green-50 rounded-lg">
 								<div className="text-3xl font-bold text-green-600">18</div>

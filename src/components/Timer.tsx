@@ -15,7 +15,7 @@ interface TimerProps {
 
 export function Timer({
 	className,
-	defaultDuration = 15 * 60, // 15 minutos por defecto
+	defaultDuration = 3 * 60, // 3 minutos por defecto
 	onTimeUp,
 	showSettings = true,
 }: TimerProps) {

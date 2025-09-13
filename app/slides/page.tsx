@@ -3,17 +3,15 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { DeckControls } from '@src/components/DeckControls'
-import { PanelInteractividad } from '@src/components/PanelInteractividad'
 import { Timer } from '@src/components/Timer'
-import { generarCodigoSesion } from '@src/lib/utils'
+import { Logo } from '@src/components/Logo'
 import {
 	Portada,
-	Resumen,
-	Problema,
+	// Resumen,
+	// Problema,
+	ResumenProblema,
 	Solucion,
-	Arquitectura,
 	Mercado,
-	Competencia,
 	Negocio,
 	Traccion,
 	Roadmap,
@@ -32,13 +30,7 @@ const slides = [
 	// Slide 2: Resumen Ejecutivo
 	{
 		id: 'resumen',
-		component: Resumen,
-	},
-
-	// Slide 3: Problema
-	{
-		id: 'problema',
-		component: Problema,
+		component: ResumenProblema,
 	},
 
 	// Slide 4: Solución
@@ -47,22 +39,10 @@ const slides = [
 		component: Solucion,
 	},
 
-	// Slide 5: Arquitectura
-	{
-		id: 'arquitectura',
-		component: Arquitectura,
-	},
-
 	// Slide 6: Mercado
 	{
 		id: 'mercado',
 		component: Mercado,
-	},
-
-	// Slide 7: Competencia
-	{
-		id: 'competencia',
-		component: Competencia,
 	},
 
 	// Slide 8: Negocio
@@ -105,7 +85,6 @@ const slides = [
 export default function SlidesPage() {
 	const [slideActual, setSlideActual] = useState(0)
 	const [mostrarInteractividad, setMostrarInteractividad] = useState(false)
-	const [codigoSesion] = useState(() => generarCodigoSesion())
 
 	const totalSlides = slides.length
 
@@ -137,15 +116,12 @@ export default function SlidesPage() {
 				</AnimatePresence>
 			</div>
 
-			<PanelInteractividad
-				codigoSesion={codigoSesion}
-				visible={mostrarInteractividad}
-				onCerrar={() => setMostrarInteractividad(false)}
-			/>
+			{/* Logo en esquina inferior izquierda */}
+			<Logo />
 
 			{/* Timer en esquina inferior derecha */}
 			<Timer
-				defaultDuration={15 * 60} // 15 minutos por defecto
+				defaultDuration={3 * 60} // 15 minutos por defecto
 				onTimeUp={() => {
 					// Opcional: mostrar notificación cuando se agote el tiempo
 					console.log('Tiempo del pitch agotado')

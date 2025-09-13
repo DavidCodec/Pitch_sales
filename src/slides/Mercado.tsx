@@ -63,7 +63,7 @@ export function Mercado() {
 									dataKey="valor"
 								>
 									{datosMercado.map((entry, index) => (
-										<Cell key={`cell-${index}`} fill={entry.color[index % entry.color.length]} />
+										<Cell key={`cell-${index}`} fill={entry.color} />
 									))}
 								</Pie>
 								<Tooltip formatter={(value) => [`${value}`, 'Cantidad']} />
