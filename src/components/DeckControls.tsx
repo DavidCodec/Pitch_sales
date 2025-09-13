@@ -86,7 +86,7 @@ export function DeckControls({
 					<Progress value={progreso} className="h-1 rounded-none" />
 			<div className="fixed top-0 left-0 right-0 h-20 z-40 group">
 				{/* Barra de progreso superior - aparece con hover */}
-				<div className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+				<div className="fixed top-0 left-0 right-0 z-50 bg-background backdrop-blur-sm border-b opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
 					<div className="flex items-center justify-between px-4 py-2">
 						<div className="flex items-center space-x-4">
 							<span className="text-sm font-medium">

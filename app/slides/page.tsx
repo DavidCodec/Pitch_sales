@@ -8,12 +8,11 @@ import { Timer } from '@src/components/Timer'
 import { generarCodigoSesion } from '@src/lib/utils'
 import {
 	Portada,
-	Resumen,
-	Problema,
+	// Resumen,
+	// Problema,
+	ResumenProblema,
 	Solucion,
-	Arquitectura,
 	Mercado,
-	Competencia,
 	Negocio,
 	Traccion,
 	Roadmap,
@@ -32,13 +31,7 @@ const slides = [
 	// Slide 2: Resumen Ejecutivo
 	{
 		id: 'resumen',
-		component: Resumen,
-	},
-
-	// Slide 3: Problema
-	{
-		id: 'problema',
-		component: Problema,
+		component: ResumenProblema,
 	},
 
 	// Slide 4: Solución
@@ -47,22 +40,10 @@ const slides = [
 		component: Solucion,
 	},
 
-	// Slide 5: Arquitectura
-	{
-		id: 'arquitectura',
-		component: Arquitectura,
-	},
-
 	// Slide 6: Mercado
 	{
 		id: 'mercado',
 		component: Mercado,
-	},
-
-	// Slide 7: Competencia
-	{
-		id: 'competencia',
-		component: Competencia,
 	},
 
 	// Slide 8: Negocio
@@ -145,7 +126,7 @@ export default function SlidesPage() {
 
 			{/* Timer en esquina inferior derecha */}
 			<Timer
-				defaultDuration={15 * 60} // 15 minutos por defecto
+				defaultDuration={3 * 60} // 15 minutos por defecto
 				onTimeUp={() => {
 					// Opcional: mostrar notificación cuando se agote el tiempo
 					console.log('Tiempo del pitch agotado')
