@@ -3,9 +3,8 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { DeckControls } from '@src/components/DeckControls'
-import { PanelInteractividad } from '@src/components/PanelInteractividad'
 import { Timer } from '@src/components/Timer'
-import { generarCodigoSesion } from '@src/lib/utils'
+import { Logo } from '@src/components/Logo'
 import {
 	Portada,
 	// Resumen,
@@ -86,7 +85,6 @@ const slides = [
 export default function SlidesPage() {
 	const [slideActual, setSlideActual] = useState(0)
 	const [mostrarInteractividad, setMostrarInteractividad] = useState(false)
-	const [codigoSesion] = useState(() => generarCodigoSesion())
 
 	const totalSlides = slides.length
 
@@ -118,11 +116,8 @@ export default function SlidesPage() {
 				</AnimatePresence>
 			</div>
 
-			<PanelInteractividad
-				codigoSesion={codigoSesion}
-				visible={mostrarInteractividad}
-				onCerrar={() => setMostrarInteractividad(false)}
-			/>
+			{/* Logo en esquina inferior izquierda */}
+			<Logo />
 
 			{/* Timer en esquina inferior derecha */}
 			<Timer
