@@ -13,10 +13,7 @@ import {
 	Dolencia1,
 	Dolencia2,
 	Actividades1,
-	Actividades2,
-	SolHub1,
-	SolHub2,
-	SolHub3,
+	VideoPanel,
 	Evolucion1,
 	Evolucion2,
 	Evolucion3,
@@ -56,28 +53,10 @@ const slides = [
 		component: Actividades1,
 	},
 
-	// Slide 5: Actividades 2
-	{
-		id: 'actividades2',
-		component: Actividades2,
-	},
-
 	// Slide 6: SolHub 1
 	{
-		id: 'solhub1',
-		component: SolHub1,
-	},
-
-	// Slide 7: SolHub 2
-	{
-		id: 'solhub2',
-		component: SolHub2,
-	},
-
-	// Slide 8: SolHub 3
-	{
-		id: 'solhub3',
-		component: SolHub3,
+		id: 'videopanel',
+		component: VideoPanel,
 	},
 
 	// Slide 9: Evolucion 1
@@ -214,7 +193,10 @@ export default function SlidesPage() {
 
 			<div className="h-full w-full overflow-hidden relative">
 				<FadeTransition slideIndex={slideActual} direction={direction} className="w-full h-full">
-					{slides[slideActual].component()}
+					{(() => {
+						const SlideComponent = slides[slideActual].component
+						return <SlideComponent />
+					})()}
 				</FadeTransition>
 			</div>
 
