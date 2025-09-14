@@ -21,22 +21,7 @@ export function Slide({ children, className, variante = 'denso', fondo }: SlideP
 	}
 
 	return (
-		<motion.div
-			initial={{
-				opacity: 0,
-				x: 50,
-			}}
-			animate={{
-				opacity: 1,
-				x: 0,
-			}}
-			exit={{
-				opacity: 0,
-				x: -50,
-			}}
-			transition={{
-				duration: 0.3,
-			}}
+		<div
 			className={cn(
 				'h-screen w-screen flex flex-col box-border overflow-hidden',
 				variantes[variante],
@@ -45,7 +30,7 @@ export function Slide({ children, className, variante = 'denso', fondo }: SlideP
 			)}
 		>
 			<div className="flex-1 w-full overflow-hidden flex flex-col"> {children}</div>
-		</motion.div>
+		</div>
 	)
 }
 

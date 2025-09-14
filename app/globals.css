@@ -233,4 +233,46 @@
   .pendulum-3 {
     animation: pendulum3 6s ease-in-out infinite;
   }
+
+  /* Optimizaciones para transiciones de slides */
+  .slide-transition-container {
+    will-change: transform, opacity;
+    transform: translateZ(0); /* Force hardware acceleration */
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  .slide-transition-content {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  /* Clases para diferentes tipos de transición */
+  .transition-slide-horizontal {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .transition-slide-vertical {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .transition-fade-scale {
+    transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Optimización de rendimiento para animaciones */
+  .gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+
+  /* Prevenir parpadeos durante las transiciones */
+  .no-flash {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }

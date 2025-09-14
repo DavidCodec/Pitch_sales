@@ -78,10 +78,86 @@ const config: Config = {
 						height: '0',
 					},
 				},
+				'slide-in-right': {
+					'0%': {
+						transform: 'translateX(100%)',
+						opacity: '0',
+					},
+					'100%': {
+						transform: 'translateX(0)',
+						opacity: '1',
+					},
+				},
+				'slide-in-left': {
+					'0%': {
+						transform: 'translateX(-100%)',
+						opacity: '0',
+					},
+					'100%': {
+						transform: 'translateX(0)',
+						opacity: '1',
+					},
+				},
+				'slide-out-right': {
+					'0%': {
+						transform: 'translateX(0)',
+						opacity: '1',
+					},
+					'100%': {
+						transform: 'translateX(100%)',
+						opacity: '0',
+					},
+				},
+				'slide-out-left': {
+					'0%': {
+						transform: 'translateX(0)',
+						opacity: '1',
+					},
+					'100%': {
+						transform: 'translateX(-100%)',
+						opacity: '0',
+					},
+				},
+				'fade-in-scale': {
+					'0%': {
+						opacity: '0',
+						transform: 'scale(0.95)',
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'scale(1)',
+					},
+				},
+				'fade-out-scale': {
+					'0%': {
+						opacity: '1',
+						transform: 'scale(1)',
+					},
+					'100%': {
+						opacity: '0',
+						transform: 'scale(1.05)',
+					},
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
+				'slide-in-right': 'slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+				'slide-in-left': 'slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+				'slide-out-right': 'slide-out-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+				'slide-out-left': 'slide-out-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+				'fade-in-scale': 'fade-in-scale 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+				'fade-out-scale': 'fade-out-scale 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+			},
+			transitionTimingFunction: {
+				'slide-ease': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+				'spring-ease': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'bounce-ease': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+			},
+			transitionDuration: {
+				slide: '500ms',
+				'slide-fast': '300ms',
+				'slide-slow': '700ms',
 			},
 		},
 	},
