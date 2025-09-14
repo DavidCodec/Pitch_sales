@@ -136,6 +136,7 @@ export default function SlidesPage() {
 	const [slideActual, setSlideActual] = useState(0)
 	const [mostrarInteractividad, setMostrarInteractividad] = useState(false)
 	const [timerIniciado, setTimerIniciado] = useState(false)
+	const [videoPrecargado, setVideoPrecargado] = useState(false)
 	const previousSlideRef = useRef(0)
 
 	const totalSlides = slides.length
@@ -152,6 +153,30 @@ export default function SlidesPage() {
 	const toggleInteractividad = () => {
 		setMostrarInteractividad(!mostrarInteractividad)
 	}
+
+	// Efecto para precargar el video cuando se carga la página
+	useEffect(() => {
+		const precargarVideo = () => {
+			const video = document.createElement('video')
+			video.src = '/video.mp4'
+			video.preload = 'auto'
+			video.muted = true
+
+			video.addEventListener('canplaythrough', () => {
+				setVideoPrecargado(true)
+				console.log('Video precargado exitosamente')
+			})
+
+			video.addEventListener('error', (e) => {
+				console.error('Error al precargar el video:', e)
+			})
+
+			// Forzar la carga
+			video.load()
+		}
+
+		precargarVideo()
+	}, [])
 
 	// Efecto para iniciar el timer automáticamente cuando se pasa del slide 0 al slide 1
 	useEffect(() => {
@@ -195,6 +220,10 @@ export default function SlidesPage() {
 				<FadeTransition slideIndex={slideActual} direction={direction} className="w-full h-full">
 					{(() => {
 						const SlideComponent = slides[slideActual].component
+						// Pasar props específicas según el slide
+						if (slides[slideActual].id === 'videopanel') {
+							return <SlideComponent videoPrecargado={videoPrecargado} />
+						}
 						return <SlideComponent />
 					})()}
 				</FadeTransition>
