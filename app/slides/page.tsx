@@ -1,8 +1,8 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useMemo, useEffect } from 'react'
 import { DeckControls } from '@src/components/DeckControls'
-import { Timer } from '@src/components/Timer'
+import { TimerWrapper } from '@src/components/TimerWrapper'
 import { Logo } from '@src/components/Logo'
 import { FadeTransition } from '@src/components/SlideTransition'
 import { useSlideAnimations } from '@src/hooks/useSlideAnimations'
@@ -156,6 +156,7 @@ const slides = [
 export default function SlidesPage() {
 	const [slideActual, setSlideActual] = useState(0)
 	const [mostrarInteractividad, setMostrarInteractividad] = useState(false)
+	const [timerIniciado, setTimerIniciado] = useState(false)
 	const previousSlideRef = useRef(0)
 
 	const totalSlides = slides.length
@@ -173,8 +174,33 @@ export default function SlidesPage() {
 		setMostrarInteractividad(!mostrarInteractividad)
 	}
 
+	// Efecto para iniciar el timer automáticamente cuando se pasa del slide 0 al slide 1
+	useEffect(() => {
+		if (slideActual === 1) {
+			setTimerIniciado(true)
+		} else if (slideActual === 0) {
+			// Resetear el estado cuando volvemos a la portada para permitir reinicio automático
+			setTimerIniciado(false)
+		}
+	}, [slideActual])
+
 	// Obtener la dirección de la transición
 	const direction = getTransitionDirection(previousSlideRef.current, slideActual)
+
+	// Memoizar el timer para evitar re-renders innecesarios
+	const timerComponent = useMemo(
+		() => (
+			<TimerWrapper
+				defaultDuration={3 * 60} // 3 minutos por defecto
+				autoStart={timerIniciado}
+				onTimeUp={() => {
+					// Opcional: mostrar notificación cuando se agote el tiempo
+					console.log('Tiempo del pitch agotado')
+				}}
+			/>
+		),
+		[timerIniciado],
+	)
 
 	return (
 		<div className="h-screen w-screen overflow-hidden">
@@ -196,13 +222,7 @@ export default function SlidesPage() {
 			<Logo />
 
 			{/* Timer en esquina inferior derecha */}
-			<Timer
-				defaultDuration={3 * 60} // 15 minutos por defecto
-				onTimeUp={() => {
-					// Opcional: mostrar notificación cuando se agote el tiempo
-					console.log('Tiempo del pitch agotado')
-				}}
-			/>
+			{timerComponent}
 		</div>
 	)
 }

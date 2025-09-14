@@ -5,7 +5,7 @@ import { AnimatedText, AnimatedCard, AnimatedIcon } from '@src/components/Animat
 export function SolHub2() {
 	return (
 		<div className="bg-gradient-to-br from-indigo-900 to-indigo-950 w-screen h-screen flex flex-col p-6">
-			<SlideTitle title="Capítulo 3: La fórmula SolHub" gradientColor="from-green-400 to-blue-400" />
+			<SlideTitle title="La fórmula SolHub" gradientColor="from-green-400 to-blue-400" />
 
 			{/* Contenido principal - 2x3 grid con cuadros del mismo tamaño */}
 			<div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4 mb-8">
