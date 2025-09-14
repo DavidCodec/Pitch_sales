@@ -1,10 +1,11 @@
 'use client'
 
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { useState, useRef } from 'react'
 import { DeckControls } from '@src/components/DeckControls'
 import { Timer } from '@src/components/Timer'
 import { Logo } from '@src/components/Logo'
+import { FadeTransition } from '@src/components/SlideTransition'
+import { useSlideAnimations } from '@src/hooks/useSlideAnimations'
 import {
 	Portada,
 	// Resumen,
@@ -13,6 +14,12 @@ import {
 	Dolencia2,
 	Actividades1,
 	Actividades2,
+	SolHub1,
+	SolHub2,
+	SolHub3,
+	Evolucion1,
+	Evolucion2,
+	Evolucion3,
 	// ResumenProblema,
 	// Solucion,
 	// Mercado,
@@ -22,7 +29,7 @@ import {
 	// Riesgos,
 	// Equipo,
 	CTA,
-} from '@src/slides'
+} from '@src/slides/index'
 
 const slides = [
 	// Slide 1: Portada
@@ -36,7 +43,7 @@ const slides = [
 		id: 'dolencia1',
 		component: Dolencia1,
 	},
-	
+
 	// Slide 3: Dolencia 2
 	{
 		id: 'dolencia2',
@@ -53,6 +60,42 @@ const slides = [
 	{
 		id: 'actividades2',
 		component: Actividades2,
+	},
+
+	// Slide 6: SolHub 1
+	{
+		id: 'solhub1',
+		component: SolHub1,
+	},
+
+	// Slide 7: SolHub 2
+	{
+		id: 'solhub2',
+		component: SolHub2,
+	},
+
+	// Slide 8: SolHub 3
+	{
+		id: 'solhub3',
+		component: SolHub3,
+	},
+
+	// Slide 9: Evolucion 1
+	{
+		id: 'evolucion1',
+		component: Evolucion1,
+	},
+
+	// Slide 10: Evolucion 2
+	{
+		id: 'evolucion2',
+		component: Evolucion2,
+	},
+
+	// Slide 11: Evolucion 3
+	{
+		id: 'evolucion3',
+		component: Evolucion3,
 	},
 
 	// // Slide 2: Resumen Ejecutivo
@@ -113,11 +156,15 @@ const slides = [
 export default function SlidesPage() {
 	const [slideActual, setSlideActual] = useState(0)
 	const [mostrarInteractividad, setMostrarInteractividad] = useState(false)
+	const previousSlideRef = useRef(0)
 
 	const totalSlides = slides.length
+	const { getTransitionDirection } = useSlideAnimations()
 
 	const cambiarSlide = (nuevoSlide: number) => {
 		if (nuevoSlide >= 0 && nuevoSlide < totalSlides) {
+			// Actualizar slide inmediatamente para transición fluida
+			previousSlideRef.current = slideActual
 			setSlideActual(nuevoSlide)
 		}
 	}
@@ -125,6 +172,9 @@ export default function SlidesPage() {
 	const toggleInteractividad = () => {
 		setMostrarInteractividad(!mostrarInteractividad)
 	}
+
+	// Obtener la dirección de la transición
+	const direction = getTransitionDirection(previousSlideRef.current, slideActual)
 
 	return (
 		<div className="h-screen w-screen overflow-hidden">
@@ -136,12 +186,10 @@ export default function SlidesPage() {
 				participantes={0}
 			/>
 
-			<div className="h-full w-full overflow-hidden">
-				<AnimatePresence mode="wait">
-					<motion.div key={slideActual} className="h-full w-full">
-						{slides[slideActual].component()}
-					</motion.div>
-				</AnimatePresence>
+			<div className="h-full w-full overflow-hidden relative">
+				<FadeTransition slideIndex={slideActual} direction={direction} className="w-full h-full">
+					{slides[slideActual].component()}
+				</FadeTransition>
 			</div>
 
 			{/* Logo en esquina inferior izquierda */}
