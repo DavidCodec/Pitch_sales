@@ -1,4 +1,8 @@
 export { Portada } from './Portada'
+export { Dolencia1 } from './Dolencia1'
+export { Dolencia2 } from './Dolencia2'
+export { Actividades1 } from './Actividades1'
+export { Actividades2 } from './Actividades2'
 export { Resumen } from './Resumen'
 export { Problema } from './Problema'
 export { Solucion } from './Solucion'
