@@ -9,14 +9,18 @@ import {
 	Portada,
 	// Resumen,
 	// Problema,
-	ResumenProblema,
-	Solucion,
-	Mercado,
-	Negocio,
-	Traccion,
-	Roadmap,
-	Riesgos,
-	Equipo,
+	Dolencia1,
+	Dolencia2,
+	Actividades1,
+	Actividades2,
+	// ResumenProblema,
+	// Solucion,
+	// Mercado,
+	// Negocio,
+	// Traccion,
+	// Roadmap,
+	// Riesgos,
+	// Equipo,
 	CTA,
 } from '@src/slides'
 
@@ -27,53 +31,77 @@ const slides = [
 		component: Portada,
 	},
 
-	// Slide 2: Resumen Ejecutivo
+	// Slide 2: Dolencia 1
 	{
-		id: 'resumen',
-		component: ResumenProblema,
+		id: 'dolencia1',
+		component: Dolencia1,
+	},
+	
+	// Slide 3: Dolencia 2
+	{
+		id: 'dolencia2',
+		component: Dolencia2,
 	},
 
-	// Slide 4: Solución
+	// Slide 4: Actividades 1
 	{
-		id: 'solucion',
-		component: Solucion,
+		id: 'actividades1',
+		component: Actividades1,
 	},
 
-	// Slide 6: Mercado
+	// Slide 5: Actividades 2
 	{
-		id: 'mercado',
-		component: Mercado,
+		id: 'actividades2',
+		component: Actividades2,
 	},
 
-	// Slide 8: Negocio
-	{
-		id: 'negocio',
-		component: Negocio,
-	},
+	// // Slide 2: Resumen Ejecutivo
+	// {
+	// 	id: 'resumen',
+	// 	component: ResumenProblema,
+	// },
 
-	// Slide 9: Tracción
-	{
-		id: 'traccion',
-		component: Traccion,
-	},
+	// // Slide 4: Solución
+	// {
+	// 	id: 'solucion',
+	// 	component: Solucion,
+	// },
 
-	// Slide 10: Roadmap
-	{
-		id: 'roadmap',
-		component: Roadmap,
-	},
+	// // Slide 6: Mercado
+	// {
+	// 	id: 'mercado',
+	// 	component: Mercado,
+	// },
 
-	// Slide 11: Riesgos
-	{
-		id: 'riesgos',
-		component: Riesgos,
-	},
+	// // Slide 8: Negocio
+	// {
+	// 	id: 'negocio',
+	// 	component: Negocio,
+	// },
 
-	// Slide 12: Equipo
-	{
-		id: 'equipo',
-		component: Equipo,
-	},
+	// // Slide 9: Tracción
+	// {
+	// 	id: 'traccion',
+	// 	component: Traccion,
+	// },
+
+	// // Slide 10: Roadmap
+	// {
+	// 	id: 'roadmap',
+	// 	component: Roadmap,
+	// },
+
+	// // Slide 11: Riesgos
+	// {
+	// 	id: 'riesgos',
+	// 	component: Riesgos,
+	// },
+
+	// // Slide 12: Equipo
+	// {
+	// 	id: 'equipo',
+	// 	component: Equipo,
+	// },
 
 	// Slide 13: CTA
 	{
