@@ -1,5 +1,5 @@
 // import { Card, CardHeader, CardTitle, CardContent } from '@src/components/ui/card'
-import {Globe, Phone, Instagram} from 'lucide-react'
+import {Globe, Phone, Instagram, Linkedin} from 'lucide-react'
 import Particles from '@src/components/ui/Particles'
 import { AnimatedText, AnimatedCard, AnimatedIcon } from '@src/components/AnimatedElements'
 
@@ -70,6 +70,21 @@ export function CTA() {
 										className="text-white hover:text-green-300 transition-colors text-lg"
 									>
 										@solware_
+									</a>
+								</div>
+							</AnimatedText>
+							<AnimatedText delay={1.8}>
+								<div className="flex items-center justify-left gap-2">
+									<AnimatedIcon delay={1.8}>
+										<Linkedin className="size-3" />
+									</AnimatedIcon>
+									<a
+										href="https://www.linkedin.com/company/agencia-solware"
+										target="_self"
+										rel="noopener noreferrer"
+										className="text-white hover:text-green-300 transition-colors text-lg"
+									>
+										agencia-solware
 									</a>
 								</div>
 							</AnimatedText>

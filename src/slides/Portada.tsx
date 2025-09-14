@@ -1,11 +1,12 @@
 import Particles from '@src/components/ui/Particles'
 import { CodeXml } from 'lucide-react'
+import { Qr } from '@src/components/Qr'
 
 export function Portada() {
 	return (
-		<div className="bg-gradient-to-br from-indigo-900/90 to-purple-900/90 w-screen h-screen">
+		<div className="bg-gradient-to-br from-indigo-900/90 to-purple-900/90 w-screen h-screen flex items-center justify-center">
 			<Particles />
-			<div className="flex flex-col items-center translate-y-[140%]">
+			<div className="flex flex-col items-center">
 				<div>
 					<h1 className="text-blue-100 text-center font-bold text-6xl font-sans flex items-center justify-center gap-2">
 						{' '}
@@ -19,6 +20,7 @@ export function Portada() {
 					Centralizando gestión de pacientes, casos, pagos y reportes en una sola plataforma
 				</div>
 				<div className="mt-8 text-white/70 text-lg italic">Eugenio Andreone y Jesús Freites - Caracas, 2025</div>
+				<Qr />
 			</div>
 		</div>
 	)

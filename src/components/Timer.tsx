@@ -1,16 +1,18 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '@src/components/ui/button'
 import { Input } from '@src/components/ui/input'
 import { Clock, Play, Pause, RotateCcw, Settings } from 'lucide-react'
 import { cn } from '@src/lib/utils'
+import { useTimer } from '@src/hooks/useTimer'
 
 interface TimerProps {
 	className?: string
 	defaultDuration?: number // en segundos
 	onTimeUp?: () => void
 	showSettings?: boolean
+	autoStart?: boolean // para iniciar automáticamente
 }
 
 export function Timer({
@@ -18,43 +20,49 @@ export function Timer({
 	defaultDuration = 3 * 60, // 3 minutos por defecto
 	onTimeUp,
 	showSettings = true,
+	autoStart = false,
 }: TimerProps) {
-	const [tiempoRestante, setTiempoRestante] = useState(defaultDuration)
-	const [tiempoInicial, setTiempoInicial] = useState(defaultDuration)
-	const [activo, setActivo] = useState(false)
 	const [mostrarConfiguracion, setMostrarConfiguracion] = useState(false)
-	// Función para formatear tiempo (MM:SS)
-	const formatearTiempo = (segundos: number): string => {
-		const minutos = Math.floor(segundos / 60)
-		const segs = segundos % 60
-		return `${minutos.toString().padStart(2, '0')}:${segs.toString().padStart(2, '0')}`
-	}
-
-	// Función para convertir segundos a formato MM:SS
-	const segundosATiempo = (segundos: number): string => {
-		const minutos = Math.floor(segundos / 60)
-		const segs = segundos % 60
-		return `${minutos.toString().padStart(2, '0')}:${segs.toString().padStart(2, '0')}`
-	}
-
-	// Función para convertir tiempo de input (MM:SS) a segundos
-	const parsearTiempo = (tiempoStr: string): number => {
-		if (!tiempoStr || tiempoStr === '') return 0
-		const partes = tiempoStr.split(':')
-		if (partes.length === 1) {
-			// Solo minutos
-			return parseInt(partes[0]) * 60
-		}
-		const minutos = parseInt(partes[0]) || 0
-		const segundos = parseInt(partes[1]) || 0
-		return minutos * 60 + segundos
-	}
-
-	const [, setTiempoPersonalizado] = useState(defaultDuration)
-	const [inputTiempo, setInputTiempo] = useState(segundosATiempo(defaultDuration))
+	const [inputTiempo, setInputTiempo] = useState('')
 	const [modoCompacto, setModoCompacto] = useState(true)
 	const [hovering, setHovering] = useState(false)
-	const intervaloRef = useRef<NodeJS.Timeout | null>(null)
+
+	// Usar el hook personalizado para el timer
+	const {
+		tiempoRestante,
+		tiempoInicial,
+		activo,
+		progreso,
+		tiempoAgotado,
+		tiempoCritico,
+		iniciar,
+		pausar,
+		reiniciar,
+		configurarTiempo,
+		formatearTiempo,
+		segundosATiempo,
+		parsearTiempo,
+	} = useTimer({
+		defaultDuration,
+		onTimeUp,
+	})
+
+	// Inicializar el input con el tiempo por defecto
+	if (!inputTiempo) {
+		setInputTiempo(segundosATiempo(defaultDuration))
+	}
+
+	// Efecto para iniciar automáticamente el timer
+	useEffect(() => {
+		if (autoStart) {
+			// Reiniciar el timer completamente y luego iniciarlo
+			reiniciar()
+			// Usar setTimeout para asegurar que el reinicio se complete antes de iniciar
+			setTimeout(() => {
+				iniciar()
+			}, 10)
+		}
+	}, [autoStart, reiniciar, iniciar])
 
 	// Función para formatear input mientras se escribe
 	const formatearInputTiempo = (valor: string): string => {
@@ -83,66 +91,19 @@ export function Timer({
 		return limpio
 	}
 
-	// Timer principal
-	useEffect(() => {
-		if (activo && tiempoRestante > 0) {
-			intervaloRef.current = setInterval(() => {
-				setTiempoRestante((prev) => {
-					if (prev <= 1) {
-						setActivo(false)
-						onTimeUp?.()
-						return 0
-					}
-					return prev - 1
-				})
-			}, 1000)
-		} else {
-			if (intervaloRef.current) {
-				clearInterval(intervaloRef.current)
-				intervaloRef.current = null
-			}
-		}
-
-		return () => {
-			if (intervaloRef.current) {
-				clearInterval(intervaloRef.current)
-			}
-		}
-	}, [activo, tiempoRestante, onTimeUp])
-
-	const iniciar = () => {
-		setActivo(true)
-	}
-
-	const pausar = () => {
-		setActivo(false)
-	}
-
-	const reiniciar = () => {
-		setActivo(false)
-		setTiempoRestante(tiempoInicial)
-	}
-
 	const aplicarTiempoPersonalizado = () => {
 		const tiempoEnSegundos = parsearTiempo(inputTiempo)
 		if (tiempoEnSegundos > 0) {
-			setTiempoPersonalizado(tiempoEnSegundos)
-			setTiempoInicial(tiempoEnSegundos)
-			setTiempoRestante(tiempoEnSegundos)
-			setActivo(false)
+			configurarTiempo(tiempoEnSegundos)
 			setMostrarConfiguracion(false)
 		}
 	}
 
 	const resetearTiempo = () => {
 		setInputTiempo(segundosATiempo(defaultDuration))
-		setTiempoPersonalizado(defaultDuration)
+		configurarTiempo(defaultDuration)
 		setMostrarConfiguracion(false)
 	}
-
-	const progreso = ((tiempoInicial - tiempoRestante) / tiempoInicial) * 100
-	const tiempoAgotado = tiempoRestante === 0
-	const tiempoCritico = tiempoRestante <= 60 && tiempoRestante > 0 // último minuto
 
 	// Función para alternar modo compacto
 	const toggleModoCompacto = () => {

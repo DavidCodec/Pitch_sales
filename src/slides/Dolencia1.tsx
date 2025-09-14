@@ -5,7 +5,7 @@ import { AnimatedText, AnimatedCard, AnimatedIcon } from '@src/components/Animat
 export function Dolencia1() {
 	return (
 		<div className="bg-gradient-to-br from-indigo-900 to-indigo-950 w-screen h-screen flex flex-col p-6">
-			<SlideTitle title="Capítulo 1: Situación Actual" gradientColor="from-green-400 to-blue-400" />
+			<SlideTitle title="Costos ocultos" gradientColor="from-green-400 to-blue-400" />
 
 			{/* Estadística principal - centrada y prominente */}
 			<AnimatedText delay={0.2} className="text-center mb-8">

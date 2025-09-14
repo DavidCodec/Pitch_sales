@@ -5,7 +5,7 @@ import { AnimatedText, AnimatedCard, AnimatedIcon } from '@src/components/Animat
 export function Actividades1() {
 	return (
 		<div className="bg-gradient-to-br from-indigo-900 to-indigo-950 w-screen h-screen flex flex-col p-6">
-			<SlideTitle title="Capítulo 2: Actividades" gradientColor="from-green-400 to-blue-400" />
+			<SlideTitle title="La trampa de lo manual" gradientColor="from-green-400 to-blue-400" />
 
 			{/* Pregunta introductoria */}
 			<AnimatedText delay={0.2} className="text-center mb-10">
