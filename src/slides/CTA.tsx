@@ -103,10 +103,6 @@ export function CTA() {
 						</AnimatedText>
 					</AnimatedCard>
 				</AnimatedText>
-
-				<AnimatedText delay={2.0}>
-					<div className="mt-12 text-3xl italic">Juntos podemos modernizar la gestión de laboratorios en Venezuela</div>
-				</AnimatedText>
 			</div>
 		</div>
 	)
