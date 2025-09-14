@@ -30,7 +30,6 @@ export function Timer({
 	// Usar el hook personalizado para el timer
 	const {
 		tiempoRestante,
-		tiempoInicial,
 		activo,
 		progreso,
 		tiempoAgotado,
